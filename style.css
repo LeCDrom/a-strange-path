@@ -11,6 +11,10 @@ body {
     background-color: #0a0b0a;
 }
 
+a:link {
+    text-decoration: none;
+}
+
 #main-header {
     display: flex;
     flex-direction: row;
@@ -35,10 +39,9 @@ body {
     align-items: center;
     gap: 20px;
     flex-direction: row;
-    
 }
 
-#main-header button {
+#main-header a button {
     color: #9cae9c;
     background-color: #0a0b0a;
     border: 2px solid #9cae9c;
@@ -51,14 +54,29 @@ body {
 
 #theme-toggle {
     display: flex;
-    cursor: pointer;
     justify-content: center;
     align-items: center;
     width: 40px;
+    height: 40px;
+    color: #9cae9c;
+    background-color: #0a0b0a;
+    border: 2px solid #9cae9c;
+    padding-inline: 10px;
+    font-size: 18px;
+    transition: ease 0.3s;
     cursor: pointer;
 }
 
-#main-header button:hover {
+#theme-toggle:hover {
+    background-color: #9cae9c;
+    color: #0a0b0a;
+}
+
+#theme-toggle:hover i {
+    color: #0a0b0a;
+}
+
+#main-header a button:hover {
     background-color: #9cae9c;
     color: #0a0b0a;
 }
@@ -120,9 +138,10 @@ body.dark-theme #theme-toggle i {
     color: #9cae9c;
 }
 
-body.dark-theme #theme-toggle i:hover {
+body.dark-theme #theme-toggle:hover i {
     color: #0a0b0a;
 }
+
 
 /* Light Theme */
 body.light-theme {
@@ -153,6 +172,6 @@ body.light-theme #theme-toggle i {
     color: #0a0b0a;
 }
 
-body.light-theme #theme-toggle i:hover {
+body.light-theme #theme-toggle:hover i {
     color: #9cae9c;
 }
