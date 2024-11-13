@@ -1,3 +1,5 @@
+/* ==================== INIT SECTION ==================== */
+
 * {
     margin: 0;
     font-family: "Courier Prime", serif;
@@ -14,6 +16,9 @@ body {
 a:link {
     text-decoration: none;
 }
+
+
+/* ==================== HEADER SECTION ==================== */
 
 #main-header {
     display: flex;
@@ -81,6 +86,102 @@ a:link {
     color: #0a0b0a;
 }
 
+
+/* ==================== GAME SECTION ==================== */
+
+/* Flex container for layout */
+.game-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+.journal-section, .inventory-section {
+    width: 25%;
+    max-height: 100vh;
+    overflow-y: auto; /* Allow scrolling for journal and inventory */
+    padding-right: 10px;
+}
+  
+.game-section {
+    width: 50%;
+    padding-inline: 10px;
+    background-color: #181a18;
+    font-size: 20px;
+    border-left: 2px solid #272b27;
+    border-right: 2px solid #272b27;
+    padding-top: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 3rem;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    align-items: center;
+    padding-inline: 0;
+    justify-content: space-around;
+    background: none;
+
+    padding-top: 0;
+    padding-bottom: 1rem;
+}
+
+#choice-text {
+    display: block;
+    word-wrap: break-word;
+    width: 100%;
+    border: none;
+    /* padding-bottom: 2rem; */
+    background: none;
+}
+  
+.journal-section {
+    margin-right: 10px;
+    background-color: #181a18;
+    border-left: 2px solid #272b27;
+}
+  
+.inventory-section {
+    margin-left: 10px;
+    background-color: #181a18;
+    border-right: 2px solid #272b27;
+}
+
+#presentation {
+    display: inline-block;
+    padding-inline: 10px;
+    font-size: 16px;
+    text-align: left;
+    padding-top: 2rem;
+    padding-inline: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.game-section button {
+    color: #9cae9c;
+    background-color: #181a18;
+    border: 2px solid #9cae9c;
+    padding-inline: 10px;
+    font-size: 15px;
+    transition: ease 0.3s;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 10rem;
+    min-height: 2rem;
+}
+
+.game-section button:hover {
+    background-color: #9cae9c;
+    color: #181a18;
+}
+
+/* ==================== THEMES SECTION ==================== */
+
 /* Dark Theme (default) */
 body.dark-theme {
     background-color: #0a0b0a;
@@ -112,6 +213,10 @@ body.dark-theme #theme-toggle i {
 
 body.dark-theme #theme-toggle:hover i {
     color: #0a0b0a;
+}
+
+body.dark-theme #presentation {
+    color: #9cae9c;
 }
 
 
@@ -146,4 +251,8 @@ body.light-theme #theme-toggle i {
 
 body.light-theme #theme-toggle:hover i {
     color: #9cae9c;
+}
+
+body.light-theme #presentation {
+    color: #0a0b0a;
 }

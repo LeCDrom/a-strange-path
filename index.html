@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Special+Elite&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Special+Elite&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/208b9051bf.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header id="main-header">
-        <a href="index.html"><h1 id="title">A Strange Place</h1></a>
+        <a href="index.html">
+            <h1 id="title">A Strange Place</h1>
+        </a>
         <nav>
             <a href="guide/"><button class="header-buttons">How to play</button></a>
             <a href="about/"><button class="header-buttons">About this project</button></a>
@@ -24,7 +28,24 @@
     </header>
 
     <main>
-        
+        <h2 id="presentation">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.</h2>
+        <div class="game-container">
+            <!-- Left Section: Clues / Journal -->
+            <div class="journal-section" id="journal"></div>
+
+            <!-- Center Section: Game Area -->
+            <div class="game-section" id="current-choice">
+                <div class="game-section" id="choice-text"></div>
+                <div class="game-section" id="button-container"></div>
+            </div>
+            
+            <!-- Right Section: Inventory -->
+            <div class="inventory-section" id="inventory"></div>
+        </div>
     </main>
 
     <footer>
@@ -33,4 +54,5 @@
 </body>
 
 <script src="js/script.js"></script>
+
 </html>
