@@ -38,34 +38,57 @@ let currentChoiceId = 'start'; // Start from the first choice
 const choices = [
   {
     id: 'start',
-    text: 'You wake up in a dark, quiet forest. What do you do?',
+    text: 'Everything feels like, a dream. This place appears to be very unusual...',
     options: [
-      { text: 'Look around', nextId: 'look_around' },
       { text: 'Look around', nextId: 'look_around' }
     ]
   },
   {
     id: 'look_around',
-    text: 'You see trees all around. There seems to be a cabin ahead.',
+    text: 'The forest looks strangely desaturated. It sure does not look very joyful.',
     options: [
-      { text: 'Go to the cabin', nextId: 'go_to_cabin' },
-      { text: 'Go to the cabin', nextId: 'go_to_cabin' }
+      { text: 'Check pockets', nextId: 'check_pockets' },
+      { text: 'Call for someone', nextId: 'call_help' }
     ]
   },
   {
-    id: 'go_to_cabin',
-    text: 'You arrive at the cabin and find a locked door. What will you do?',
+    id: 'check_pockets',
+    text: 'I have definitely seen this before. Familiar but not really helping...',
     options: [
-      { text: 'Look for a key', nextId: 'find_key' },
-      { text: 'Look for a key', nextId: 'find_key' }
+      { text: 'Look closer', nextId: 'analyze_bracelet' },
+      { text: 'Look around', nextId: 'start' }
     ]
   },
   {
-    id: 'find_key',
-    text: 'You find a key under the doormat and open the cabin door.',
+    id: 'analyze_bracelet',
+    text: 'No matter how hard I try, I cannot read these characters.',
     options: [
-      { text: 'Enter the cabin', nextId: 'enter_cabin' },
-      { text: 'Enter the cabin', nextId: 'enter_cabin' }
+      { text: 'Call for someone', nextId: 'call_help' },
+      { text: 'Start walking', nextId: 'start_walking' }
+    ]
+  },
+  {
+    id: 'call_help',
+    text: 'No response... What should I do now?',
+    options: [
+      { text: 'Try again', nextId: 'but_no_one_came' },
+      { text: 'Start walking', nextId: 'start_walking' }
+    ]
+  },
+  {
+    id: 'but_no_one_came',
+    text: 'I guess I really am alone... What did I get myself into?',
+    options: [
+      { text: 'Try again', nextId: 'call_help' },
+      { text: 'Start walking', nextId: 'start_walking' }
+    ]
+  },
+  {
+    id: 'start_walking',
+    text: 'That... That does not look normal.',
+    options: [
+      { text: 'Walk towards the glowing mushrooms', nextId: 'walk_mushrooms' },
+      { text: 'Walk towards the torn stump', nextId: 'walk_stump' }
     ]
   }
 ];

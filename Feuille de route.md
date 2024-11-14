@@ -41,4 +41,35 @@ fonction des choix grâce à javascript et CSS
 - pas de mauvais choix, progression dans tous les cas
 - partie mode "histoire" : le joueur commence la partie sans aucun contexte (ou un minimum)
 
+## Interface
+
+
 ## Progression / Histoire
+
+#### Situation initiale
+> [0] : le joueur se réveille dans une forêt sombre, complètement amnésique.
+- ➔ [1] choix 1 : observer les alentours
+
+> [1] choix 1 : il se trouve dans une clairière, forêt étrangement grise, pas de vent, pas de bruit, semble "figée dans le temps"
+- ➔ [1a] choix 1 : fouiller ses poches
+- ➔ [1b] choix 2 : appeler
+
+> [1a] choix 1 : trouve un étrange bracelet [affichage de l'inventaire primitif]
+- ➔ [1aA] choix 1 : le regarder en détail
+- ➔ [1] choix 2 : observer les alentours
+
+> [1aA] choix 1 : inscription langage illisible, semble familier
+- ➔ [1b] choix 1 : appeler
+- ➔ [2] choix 2 : commencer à marcher
+
+> [1b] choix 1 : aucun bruit en retour, sentiment de solitude
+- ➔ [1bA] choix 1 : réessayer
+- ➔ [2] choix 2 : commencer à marcher
+
+> [1bA] choix 1 : 
+
+> choix 2 : 2 routes distinctes visibles
+- ➔ [2] choix 1 : aller vers les champignons luminescents
+- ➔ choix 2 : aller vers la souche arrachée
+
+#### Commencer à marcher
