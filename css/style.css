@@ -156,14 +156,16 @@ html, body {
     border-right: 2px solid #272b27;
 }
 
-#presentation {
+#choice-description {
     display: inline-block;
-    padding-inline: 10px;
     font-size: 16px;
-    text-align: left;
-    padding-top: 2rem;
-    padding-inline: 2rem;
-    padding-bottom: 0.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-inline: 4rem;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #181a18;
+    border: 2px solid #272b27;
 }
 
 .game-section button {
@@ -182,6 +184,11 @@ html, body {
 .game-section button:hover {
     background-color: #9cae9c;
     color: #181a18;
+}
+
+#main-section {
+    display: flex;
+    flex-direction: column;
 }
 
 /* ==================== THEMES SECTION ==================== */
@@ -219,10 +226,14 @@ body.dark-theme #theme-toggle:hover i {
     color: #0a0b0a;
 }
 
-body.dark-theme #presentation {
+body.light-theme #choice-description {
     color: #9cae9c;
+    border-color: #181a18;
 }
 
+body.light-theme #inventory, #journal {
+    border-color: #181a18;
+}
 
 /* Light Theme */
 body.light-theme {
@@ -257,6 +268,11 @@ body.light-theme #theme-toggle:hover i {
     color: #9cae9c;
 }
 
-body.light-theme #presentation {
-    color: #0a0b0a;
+body.light-theme #choice-description {
+    color: #9cae9c;
+    border-color: #0a0b0a;
+}
+
+body.light-theme #inventory, #journal {
+    border-color: #0a0b0a;
 }
