@@ -38,7 +38,7 @@ let currentChoiceId = 'start'; // Start from the first choice
 const choices = [
   {
     id: 'start',
-    text: 'Everything feels like, a dream. This place appears to be very unusual...',
+    text: 'Everything feels like a dream. This place appears to be very unusual...',
     options: [
       { text: 'Look around', nextId: 'look_around' }
     ],
