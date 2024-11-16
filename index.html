@@ -16,38 +16,19 @@
 
 <body>
     <header id="main-header">
-        <a href="index.html">
-            <h1 id="title">A Strange Place</h1>
+        <a href>
+            <h1 id="main-title" class="title">A Strange Path</h1>
         </a>
         <nav>
-            <a href="guide/"><button class="header-buttons">How to play</button></a>
-            <a href="about/"><button class="header-buttons">About this project</button></a>
-            <a href="https://github.com/LeCDrom/"><button class="header-buttons">My GitHub</button></a>
-            <button class="header-buttons" id="theme-toggle"><i class="fa-solid fa-sun"></i></button>
+            <a href="game/" class="link">Start</a>
+            <a href="guide/" class="link">How to play</a>
+            <a href="about/" class="link">About</a>
+            <a href="https://github.com/LeCDrom/" class="link">My GitHub</a>
         </nav>
     </header>
 
     <main>
-        <section class="game" id="main-section">
-            <h2 id="choice-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum (Description of the event).</h2>
-            <div class="game-container">
-                <!-- Left Section: Clues / Journal -->
-                <div class="journal-section" id="journal"></div>
-
-                <!-- Center Section: Game Area -->
-                <div class="game-section" id="current-choice">
-                    <div class="game-section" id="choice-text"></div>
-                    <div class="game-section" id="button-container"></div>
-                </div>
-                
-                <!-- Right Section: Inventory -->
-                <div class="inventory-section" id="inventory"></div>
-            </div>
-        </section>
+        <div id="main-background"></div>
     </main>
 
     <footer>
@@ -55,6 +36,6 @@
     </footer>
 </body>
 
-<script src="js/script.js"></script>
+<script src="js/game.js"></script>
 
 </html>

@@ -22,26 +22,34 @@ html, body {
     height: 100%;
 }
 
+.title {
+    color: #9cae9c;
+    font-family: "Special Elite", serif;
+}
+
 /* ==================== HEADER SECTION ==================== */
 
-#main-header {
+#fixed-header {
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 75px;
     border-bottom: 2px solid #9cae9c;
     justify-content: space-between;
+    background-color: #0a0b0a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
-#main-header a #title {
-    color: #9cae9c;
+#fixed-header a #small-title {
     padding-top: 10px;
-    font-family: "Special Elite", serif;
     font-size: 40px;
     padding-left: 20px;
 }
 
-#main-header nav {
+#fixed-header nav {
     display: flex;
     flex-direction: row;
     padding-right: 20px;
@@ -50,7 +58,7 @@ html, body {
     flex-direction: row;
 }
 
-#main-header a button {
+#fixed-header a button {
     color: #9cae9c;
     background-color: #0a0b0a;
     border: 2px solid #9cae9c;
@@ -90,14 +98,87 @@ html, body {
     color: #0a0b0a;
 }
 
+/* ==================== FRONT PAGE SECTION ==================== */
+
+#main-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 160px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(10, 11, 10, 0.75);
+}
+
+#main-header a #main-title {
+    margin-top: 10px;
+    font-size: 40px;
+    margin-left: 80px;
+}
+
+#main-header nav {
+    display: flex;
+    flex-direction: row;
+    margin-right: 80px;
+    align-items: center;
+    gap: 50px;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.link {
+    text-decoration: none;
+    position: relative;
+    color: #9cae9c;
+}
+
+.link:hover {
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Position it at the bottom of the text */
+    left: 50%; /* Start from the left */
+    width: 0; /* Initially, the line is not visible */
+    height: 2px; /* Thickness of the underline */
+    background-color: #9cae9c; /* Color of the underline */
+    transform: translateX(-50%);
+    transition: width 0.3s ease; /* Smooth animation */
+}
+
+.link:hover::after {
+    width: 100%; /* Expand the line to full width on hover */
+}
+
+#main-header a button {
+    color: #9cae9c;
+    background-color: #0a0b0a;
+    border: 2px solid #9cae9c;
+    height: 40px;
+    padding-inline: 10px;
+    font-size: 18px;
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+
+#main-background {
+    background-image: url(../images/background_iridescent.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: pixelated;
+}
 
 /* ==================== GAME SECTION ==================== */
 
-/* Flex container for layout */
-.game-container {
+#main-section {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    flex-direction: column;
 }
 
 .journal-section, .inventory-section {
@@ -106,7 +187,12 @@ html, body {
     overflow-y: auto; /* Allow scrolling for journal and inventory */
     padding-right: 10px;
 }
-  
+
+.game-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .game-section {
     width: 50%;
     padding-inline: 10px;
@@ -118,6 +204,23 @@ html, body {
     align-items: center;
     flex-direction: column;
     min-height: 4rem;
+    border-top: 2px solid #272b27;
+    border-bottom: 2px solid #272b27;
+}
+
+#choice-description {
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 6.75rem;
+    padding: 1rem;
+    background-color: #181a18;
+    border-top: 2px solid #272b27;
+    border-bottom: 2px solid #272b27;
+    font-style: italic;
+    margin-bottom: 2rem;
+    min-height: 3rem;
+    box-shadow: 0px 0 10px 1px #9cae9c;
 }
 
 #button-container {
@@ -143,31 +246,6 @@ html, body {
     background: none;
     text-align: center;
 }
-  
-.journal-section {
-    margin-right: 10px;
-    background-color: #181a18;
-    border-left: 2px solid #272b27;
-}
-  
-.inventory-section {
-    margin-left: 10px;
-    background-color: #181a18;
-    border-right: 2px solid #272b27;
-}
-
-#choice-description {
-    display: inline-block;
-    font-size: 16px;
-    text-align: center;
-    margin-top: 2rem;
-    margin-inline: 4rem;
-    padding: 1rem;
-    margin-bottom: 0.5rem;
-    background-color: #181a18;
-    border: 2px solid #272b27;
-    font-style: italic;
-}
 
 .game-section button {
     color: #9cae9c;
@@ -187,9 +265,18 @@ html, body {
     color: #181a18;
 }
 
-#main-section {
-    display: flex;
-    flex-direction: column;
+.journal-section {
+    margin-right: 10px;
+    background-color: #181a18;
+    border-top: 2px solid #272b27;
+    border-bottom: 2px solid #272b27;   
+}
+  
+.inventory-section {
+    margin-left: 10px;
+    background-color: #181a18;
+    border-top: 2px solid #272b27;
+    border-bottom: 2px solid #272b27;
 }
 
 /* ==================== THEMES SECTION ==================== */
@@ -200,22 +287,28 @@ body.dark-theme {
     color: #9cae9c;
 }
 
-body.dark-theme #main-header{
-    border-bottom: 2px solid #9cae9c;
+body.dark-theme div {
+    border-color: #272b27;
+    color: #9cae9c;
 }
 
-body.dark-theme #main-header button {
+body.dark-theme #fixed-header{
+    border-bottom: 2px solid #9cae9c;
+    background-color: #0a0b0a;
+}
+
+body.dark-theme #fixed-header button {
     color: #9cae9c;
     background-color: #0a0b0a;
     border-color: #9cae9c;
 }
 
-body.dark-theme #main-header button:hover {
+body.dark-theme #fixed-header button:hover {
     background-color: #9cae9c;
     color: #0a0b0a;
 }
 
-body.dark-theme #main-header a #title {
+body.dark-theme #fixed-header a #small-title {
     color: #9cae9c;
 }
 
@@ -227,13 +320,10 @@ body.dark-theme #theme-toggle:hover i {
     color: #0a0b0a;
 }
 
-body.light-theme #choice-description {
+body.dark-theme #choice-description {
     color: #9cae9c;
-    border-color: #181a18;
-}
-
-body.light-theme #inventory, #journal {
-    border-color: #181a18;
+    border-color: #272b27;
+    box-shadow: 0px 0 10px 1px #9cae9c;
 }
 
 /* Light Theme */
@@ -242,22 +332,28 @@ body.light-theme {
     color: #0a0b0a;
 }
 
-body.light-theme #main-header {
+body.light-theme div {
     border-color: #0a0b0a;
+    color: #9cae9c;
 }
 
-body.light-theme #main-header button {
+body.light-theme #fixed-header {
+    border-color: #0a0b0a;
+    background-color: #9cae9c;
+}
+
+body.light-theme #fixed-header button {
     color: #0a0b0a;
     background-color: #9cae9c;
     border-color: #0a0b0a;
 }
 
-body.light-theme #main-header button:hover {
+body.light-theme #fixed-header button:hover {
     background-color: #0a0b0a;
     color: #9cae9c;
 }
 
-body.light-theme #main-header a #title {
+body.light-theme #fixed-header a #small-title  {
     color: #0a0b0a;
 }
 
@@ -272,8 +368,9 @@ body.light-theme #theme-toggle:hover i {
 body.light-theme #choice-description {
     color: #9cae9c;
     border-color: #0a0b0a;
+    box-shadow: 0px 0 5px 0px #0a0b0a;
 }
 
-body.light-theme #inventory, #journal {
-    border-color: #0a0b0a;
+body.light-theme .game-container div {
+    background-color: #181a18;
 }
