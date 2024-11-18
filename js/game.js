@@ -70,7 +70,7 @@ const choices = [
       { text: 'Walk towards the clearing', nextId: 'walk_mushrooms' },
       { text: 'Walk towards the torn stump', nextId: 'walk_stump' }
     ],
-    description: '"I see two oddities in the distance : a stump that seems to have been completely ripped-off the ground, and a glowing mushroom clearing. I have a feeling I\'m going to see this kind of thing a lot here."'
+    description: '"I see two oddities in the distance : a stump that seems to have been completely ripped from the ground, and a glowing mushroom clearing. I have a feeling I\'m going to see this kind of thing a lot here."'
   }
 ];
 
