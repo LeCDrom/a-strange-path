@@ -60,7 +60,7 @@ html, body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 160px;
+    height: 16%;
     justify-content: space-between;
     /* position: fixed;
     top: 0;
@@ -74,7 +74,7 @@ html, body {
 #main-title {
     margin-top: 10px;
     font-size: 30px;
-    margin-right: 80px;
+    margin-right: 5%;
     color: white;
     font-family: "Courier Prime", serif;
 }
@@ -82,9 +82,9 @@ html, body {
 #main-nav {
     display: flex;
     flex-direction: row;
-    margin-left: 80px;
+    margin-left: 5%;
     align-items: center;
-    gap: 50px;
+    gap: 3vw;
     flex-direction: row;
     font-size: 20px;
 }
@@ -120,17 +120,6 @@ html, body {
     width: 100%; /* Expand the line to full width on hover */
 }
 
-#main-header a button {
-    color: #9cae9c;
-    background-color: #0a0b0a;
-    border: 2px solid #9cae9c;
-    height: 40px;
-    padding-inline: 10px;
-    font-size: 18px;
-    transition: ease 0.3s;
-    cursor: pointer;
-}
-
 .main-body {
     background-image: url(../images/background_iridescent.jpg);
     background-repeat: no-repeat;
@@ -164,10 +153,6 @@ html, body {
     color: white;
 }
 
-#presentation a {
-    width: fit-content;
-}
-
 #presentation button {
     color: white;
     background-color: transparent;
@@ -178,6 +163,7 @@ html, body {
     padding-bottom: 5px;
     transition: 0.3s ease;
     margin: 0;
+    width: fit-content;
 }
 
 #presentation button:hover {
@@ -248,7 +234,7 @@ html, body {
     flex-direction: row;
 }
 
-#fixed-header a button {
+#fixed-header button {
     color: #9cae9c;
     background-color: #0a0b0a;
     border: 2px solid #9cae9c;
@@ -283,7 +269,7 @@ html, body {
     color: #0a0b0a;
 }
 
-#main-header a button:hover {
+#main-header button:hover {
     background-color: #9cae9c;
     color: #0a0b0a;
 }

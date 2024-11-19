@@ -19,17 +19,17 @@
     <header id="fixed-header">
         <a href="../index.html" id="small-title" class="title">A Strange Path</a>
         <nav id="fixed-header-nav">
-            <a href="../index.html"><button class="header-buttons">Home</button></a>
-            <a href="../guide/"><button class="header-buttons">How to play</button></a>
-            <a href="../about/"><button class="header-buttons">About</button></a>
-            <a href="https://github.com/LeCDrom/"><button class="header-buttons">My GitHub</button></a>
+            <button class="header-buttons" onclick="window.location.href='../index.html'">Home</button>
+            <button class="header-buttons" onclick="window.location.href='../guide/'">How to play</button>
+            <button class="header-buttons" onclick="window.location.href='../about/'">About</button>
+            <button class="header-buttons" onclick="window.location.href='https\://github.com/LeCDrom/'">My GitHub</button>
             <button class="header-buttons" id="theme-toggle"><i class="fa-solid fa-sun"></i></button>
         </nav>
     </header>
 
     <main>
         <section class="game" id="main-section">
-            <h4 id="choice-description"></h4>
+            <h4 id="choice-description">Lorem Ipsum</h4>
             <div class="game-container">
                 <!-- Left Section: Clues / Journal -->
                 <div class="journal-section" id="journal"></div>
@@ -49,9 +49,8 @@
     <footer>
 
     </footer>
+    <script src="../js/theme_switch.js"></script>
+    <script src="../js/game.js"></script>
 </body>
-
-<script src="../js/theme_switch.js"></script>
-<script src="../js/game.js"></script>
 
 </html>
