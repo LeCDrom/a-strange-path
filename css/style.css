@@ -34,7 +34,22 @@ body {
       opacity: 0;
       pointer-events: none;
     }
-  }
+}
+
+.flip-in-hor-top {
+    animation: flip-in-hor-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes flip-in-hor-top {
+    0% {
+      transform: rotateX(-80deg);
+      opacity: 0;
+    }
+    100% {
+      transform: rotateX(0);
+      opacity: 1;
+    }
+}
 
 a:link {
     text-decoration: none;
@@ -223,6 +238,7 @@ html, body {
     font-size: 40px;
     margin-left: 20px;
     width: fit-content;
+    font-family: "Special Elite", serif;
 }
 
 #fixed-header-nav {

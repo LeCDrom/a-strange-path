@@ -106,9 +106,24 @@ function displayChoice(choiceId) {
   // Add new buttons for each option
   choice.options.forEach(option => {
     const button = document.createElement('button');
+    button.className = 'choice-button';
     button.textContent = option.text;
     button.onclick = () => handleChoice(option.nextId);
     currentChoiceButtonContainer.appendChild(button);
+
+    const choice_button = document.querySelectorAll('.choice-button');
+    const choice_description = document.getElementById('choice-description');
+
+    choice_button.forEach(button => {
+        button.addEventListener('click', () => {
+              choice_description.classList.add('flip-in-hor-top');
+
+            setTimeout(() => {
+                choice_description.classList.remove('flip-in-hor-top');
+            }, 600);
+        });
+    });
+
   });
 
   // Scroll to current choice
