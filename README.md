@@ -1,11 +1,10 @@
 # Projet : Jeu à choix
 
 ## Description
-::: info
-**Ce projet consiste en un site web de jeu à choix en HTML et CSS.**  
+[!NOTE]
+Ce projet consiste en un site web de jeu à choix en HTML et CSS.**  
 L'utilisateur suit l'aventure d'un individu reprenant connaissance dans une forêt étrange, et doit le guider en effectuant divers choix.  
 Aucun choix n'est "mauvais", tous les chemins mènent à la fin du jeu.
-:::
 
 ## Langages et Technologies Utilisés
 - **HTML** : pour la structure et le contenu du site web
