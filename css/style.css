@@ -28,12 +28,12 @@ body {
 
 @keyframes scale-in-ver-bottom {
     0% {
-      transform: scaleY(0);
+      transform: scaleX(0);
       transform-origin: 0% 100%;
       opacity: 1;
     }
     100% {
-      transform: scaleY(1);
+      transform: scaleX(0.5);
       transform-origin: 0% 100%;
       opacity: 1;
     }
@@ -195,7 +195,21 @@ html, body {
     opacity: 1;
 }
 
-#presentation {
+#presentation-hidden {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-inline: 5%;
+    height: 18rem;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+
+    max-width: 100%; /* Ensure it doesn't overflow */
+    position: relative;
+    z-index: -1;
+}
+
+#presentation, #presentation-hidden {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -208,17 +222,17 @@ html, body {
     position: relative;
 }
 
-#presentation h1 {
+#presentation h1, #presentation-hidden h1 {
     color: white;
     font-weight: bold;
     font-size: 65px;
 }
 
-#presentation p {
+#presentation p, #presentation-hidden p {
     color: white;
 }
 
-#presentation button {
+#presentation button, #presentation-hidden button {
     color: white;
     background-color: transparent;
     border-color: white;
@@ -231,7 +245,7 @@ html, body {
     width: fit-content;
 }
 
-#presentation button:hover {
+#presentation button:hover, #presentation-hidden button:hover {
     box-shadow: 0px 0px 20px 0px white;
     color: #0a0b0a;
     background-color: white ;
@@ -241,13 +255,13 @@ html, body {
     display: flex;
     flex-direction: column;
     background-color: rgba(10, 11, 10, 0.45);
-    margin-inline: 5%;
+    margin-inline: 5%;  
     height: 600px;
 }
 
 #main-footer {
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    bottom: -80px;
     right: 0;
     left: 0;
 }
