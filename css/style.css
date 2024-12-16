@@ -473,7 +473,6 @@ html, body {
 
 #quote-container {
     margin-top: calc(75px + 4rem);
-    margin-right: 40%;
     margin-left: 2rem;
     /* background-color: #ffffff1f; */
     height: 150px;
@@ -483,14 +482,16 @@ html, body {
     font-family: "Courier prime", sans-serif;
     width: fit-content;
     font-size: 30px;
-    color: #181a18;
+    color: #272b27;
     background-color: #9cae9c;
     box-shadow: 10px 10px 0px #181a18;
+    margin-right: 2rem;
+    padding-right: 2rem;
 }
 
 #author {
     color: #9cae9c;
-    text-shadow: 7px 0 2px #9cae9c, -7px 0 2px #9cae9c;
+    text-shadow: 7px 0 3px #9cae9cc9, -7px 0 3px #9cae9cc9;
     font-size: 18px;
     font-style: italic;
     text-align: left;
@@ -501,8 +502,28 @@ html, body {
     border-color: #272b27;
     border-width: 1px;
     border-style: solid;
-    margin-right: 30%;
+    margin-right: 2rem;
     margin-left: 2rem;
+}
+
+#main-content {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
+.question {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+#main-content p {
+    font-size: 18px;
+}
+
+#main-content p span {
+    font-weight: bold;
+    font-size: 20px;
 }
 
 /* ==================== THEMES SECTION ==================== */
