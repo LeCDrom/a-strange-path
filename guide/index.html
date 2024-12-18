@@ -14,38 +14,72 @@
     <script src="https://kit.fontawesome.com/208b9051bf.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="main-body">
-    <!-- <div id="transition"></div> -->
-    <header id="main-header">
-        <nav id="main-nav">
-            <a href="https://github.com/LeCDrom/" class="fa-brands fa-github-alt" title="GitHub"></a>
-            <a href="../about/" class="link" title="About">About</a>
-            <a class="dead-link" title="How to Play">How to play</a>
-            <a href="../index.html" class="link" title="Home">Home</a>
+<body id="guide-body">
+    <div id="load"></div>
+    <header id="fixed-header">
+        <a href="../index.html" id="small-title" class="title">A Strange Path</a>
+        <nav id="fixed-header-nav">
+            <button class="header-buttons" onclick="window.location.href='../index.html'">Home</button>
+            <button class="header-buttons" onclick="window.location.href='../guide/'">How to play</button>
+            <button class="header-buttons" onclick="window.location.href='../about/'">About</button>
+            <button class="header-buttons" onclick="window.location.href='https\://github.com/LeCDrom/'">My
+                GitHub</button>
+            <button class="header-buttons" id="theme-toggle"><i class="fa-solid fa-sun"></i></button>
         </nav>
-        <a href="index.html" id="main-title" class="title" title="A Strange Path">A Strange Path</a>
     </header>
 
-    <main id="front-main">
-        <section id="presentation">
-            <div id="title-subtitle">
-                <h1>A Strange<br>Path</h1>
-                <p>- a choice-based adventure game -</p>
+    <main>
+        <section id="quote-container">
+            <div id="quote">
+                <div class="lines"><p>Everything feels like a dream.</p></div>
+                <br>
+                <div class="lines"><p>This place appears to be very unusual...</p></div>
             </div>
-            <button class="header-buttons" title="Begin your adventure" onclick="window.location.href='game/'">Enter</button>
+            <br>
+            <p id="author">— Someone</p>
+            <br>
         </section>
-        
-        <!-- <section id="main-content">
+
+        <hr id="quote-separator">
+
+        <section id="main-content">
+            <div id="content-container">
+
             
-        </section> -->
+                <h1 class="question">Where are you?</h1>
+                <p>
+                    <span class="bold">You don't know.</span><br>
+                    A mysterious forest is extending in all directions<br>
+                    You feel a strange presence; It's like the whole forest is staring at you...
+                </p>
+                <br>
+                <h1 class="question">Who are you?</h1>
+                <p><span class="bold">You don't remember.</span><br>
+                    Your memory only consists of some vague and distant fragments<br>
+                    Your identity seems to have been corrupted by something, preventing you from accessing them...
+                </p>
+                <br>
+                <h1 class="question">Why are you here?</h1>
+                <p><span class="bold">You don't understand.</span><br>
+                    This place does not feel real<br>
+                    — You know you are not supposed to be here —
+                </p>
+            </div>
+            <div id="useless-buttons-container">
+                <button class="useless-buttons" id="B1">Something</button>
+                <button class="useless-buttons" id="A2">Is</button>
+                <button class="useless-buttons" id="B3">Not</button>
+                <button class="useless-buttons" id="A4">Quite</button>
+                <button class="useless-buttons" id="B5">Right</button>
+            </div>
+            <hr>
+        </section>
     </main>
 
-    <footer id="main-footer">
-        <div id="bottom-black-box">
-            <p>Projet final SaÉ 1.14 2024</p>
-            <p>DAIRIN Côme</p>  
-        </div>
+    <footer>
+
     </footer>
+    <script src="../js/theme_switch.js"></script>
 </body>
 
 </html>
