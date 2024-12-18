@@ -14,38 +14,37 @@
     <script src="https://kit.fontawesome.com/208b9051bf.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="main-body">
-    <!-- <div id="transition"></div> -->
-    <header id="main-header">
-        <nav id="main-nav">
-            <a href="https://github.com/LeCDrom/" class="fa-brands fa-github-alt" title="GitHub"></a>
-            <a class="dead-link" title="About">About</a>
-            <a href="../guide/" class="link" title="How to Play">How to play</a>
-            <a href="../index.html" class="link" title="Home">Home</a>
+<body id="about-body">
+    <div id="white-background"></div>
+    <div id="load"></div>
+    <header id="fixed-header">
+        <a href="../index.html" id="small-title" class="title">A Strange Path</a>
+        <nav id="fixed-header-nav">
+            <button class="header-buttons" onclick="window.location.href='../index.html'">Home</button>
+            <button class="header-buttons" onclick="window.location.href='../guide/'">How to play</button>
+            <button class="header-buttons" onclick="window.location.href='../about/'">About</button>
+            <button class="header-buttons" onclick="window.location.href='https\://github.com/LeCDrom/'">My
+                GitHub</button>
+            <button class="header-buttons" id="theme-toggle"><i class="fa-solid fa-sun"></i></button>
         </nav>
-        <a href="index.html" id="main-title" class="title" title="A Strange Path">A Strange Path</a>
     </header>
 
-    <main id="front-main">
-        <section id="presentation">
-            <div id="title-subtitle">
-                <h1>A Strange<br>Path</h1>
-                <p>- a choice-based adventure game -</p>
-            </div>
-            <button class="header-buttons" title="Begin your adventure" onclick="window.location.href='game/'">Enter</button>
+    <main id="about-main-new">
+        <section id="about-presentation">
+            <h1>What is this project?</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+            <button class="about-buttons" onclick="window.location.href='#about-me'">About me</button>
         </section>
-        
-        <!-- <section id="main-content">
-            
-        </section> -->
     </main>
 
-    <footer id="main-footer">
-        <div id="bottom-black-box">
-            <p>Projet final SaÉ 1.14 2024</p>
-            <p>DAIRIN Côme</p>  
-        </div>
+    <footer>
+
     </footer>
+    <script src="../js/theme_switch.js"></script>
 </body>
 
 </html>
