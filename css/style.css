@@ -13,6 +13,10 @@ body {
     background-color: #0a0b0a;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 #transition {
     position: fixed;
     top: 0;
@@ -63,10 +67,42 @@ body {
     }
 }
 
+/* Animation */
+.anim-typewriter {
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter{
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+@keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+}
+
+.scale-in-hor-left {
+	animation: scale-in-hor-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes scale-in-hor-left {
+    0% {
+      transform: scaleX(0);
+      transform-origin: 0% 0%;
+      opacity: 1;
+    }
+    100% {
+      transform: scaleX(1);
+      transform-origin: 0% 0%;
+      opacity: 1;
+    }
+}
+
 .flip-in-hor-top {
     animation: flip-in-hor-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-
 @keyframes flip-in-hor-top {
     0% {
       transform: rotateX(-80deg);
@@ -307,6 +343,7 @@ html, body {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 999;
 }
 
 #small-title {
@@ -471,22 +508,31 @@ html, body {
 
 /* ==================== HOW TO PLAY SECTION ==================== */
 
+.fa-compass {
+    font-size: 20px;
+}
+
 #quote-container {
     margin-top: calc(75px + 4rem);
     margin-left: 2rem;
     /* background-color: #ffffff1f; */
-    height: 150px;
+    height: auto;
 }
 
 #quote p {
     font-family: "Courier prime", sans-serif;
-    width: fit-content;
     font-size: 30px;
-    color: #272b27;
-    background-color: #9cae9c;
-    box-shadow: 10px 10px 0px #181a18;
-    margin-right: 2rem;
-    padding-right: 2rem;
+    color: #181a18;
+    overflow: hidden;
+    padding-right: 1rem;
+}
+
+.lines {
+    background-color: #9cae9c ;
+    box-shadow: 8px 8px 0px #272b27;
+    white-space: nowrap;
+    width: fit-content;
+    overflow: hidden;
 }
 
 #author {
@@ -510,6 +556,12 @@ html, body {
     margin-left: 2rem;
     margin-right: 2rem;
     margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    gap: 2rem;
+    align-content: start;
+
+    background: #0a0b0a;
 }
 
 .question {
@@ -517,13 +569,161 @@ html, body {
     font-size: 35px;
 }
 
-#main-content p {
+#main-content #content-container p {
     font-size: 18px;
 }
 
-#main-content p span {
+#useless-buttons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.useless-buttons {
+    color: #9cae9c;
+    background-color: #0a0b0a;
+    border: 2px solid #9cae9c;
+    height: 40px;
+    padding-inline: 10px;
+    font-size: 18px;
+    transition: ease 0.3s;
+    cursor: pointer;
+    filter: hue-rotate(180deg);
+}
+
+.useless-buttons:hover {
+    background-color: #9cae9c;
+    color: #181a18;
+    box-shadow: 8px 8px 0px #272b27;
+    filter: hue-rotate(180deg);
+
+}
+
+#B1 {
+    grid-column: 2;
+    grid-row: 1;
+    width: 9rem;
+}
+
+#A2 {
+    grid-column: 1;
+    grid-row: 2;
+    width: 3rem;
+}
+
+#B3 {
+    grid-column: 2;
+    grid-row: 3;
+    width: 4rem;
+}
+
+#A4 {
+    grid-column: 1;
+    grid-row: 4;
+    width: 6rem;
+}
+
+#B5 {
+    grid-column: 2;
+    grid-row: 5;
+    width: 6rem;
+}
+
+#main-content hr {
+    border-color: #272b27;
+    border-width: 1px;
+    border-style: solid;
+}
+
+#guide-body {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    opacity: 1;
+}
+
+/* ==================== ABOUT SECTION ==================== */
+
+#white-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bottom-trees.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1; /* Keep it behind the content */
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#about-main-new {
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+
+#about-presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 80%;
+    justify-self: center;
+    justify-content: center;
+    background: none;
+
+    margin-top: calc(75px + 5%);
+}
+
+#about-presentation h1 {
+    color: white;
+    font-size: 60px;
     font-weight: bold;
+    mix-blend-mode: difference;
+}
+
+#about-presentation p {
+    color: white;
+    mix-blend-mode: difference;
+    margin-top: 1%;
+    text-align: justify;
+
     font-size: 20px;
+}
+
+.about-buttons {
+    background-color:white;
+    color: #0a0b0a;
+    border: 2px solid #0a0b0a;
+    height: 40px;
+    width: 9rem;
+    padding-inline: 10px;
+    font-size: 18px;
+    transition: ease 0.3s;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+.about-buttons:hover {
+    background-color: #0a0b0a;
+    color: white;
+    border-color: #272b27;
 }
 
 /* ==================== THEMES SECTION ==================== */
