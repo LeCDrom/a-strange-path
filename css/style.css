@@ -30,20 +30,6 @@ body {
     z-index: 0;
 }
 
-@keyframes scale-in-ver-bottom {
-    0% {
-      transform: scaleX(0);
-      transform-origin: 0% 100%;
-      opacity: 1;
-    }
-    100% {
-      transform: scaleX(0.5);
-      transform-origin: 0% 100%;
-      opacity: 1;
-    }
-}
-  
-
 #load {
     position: fixed;
     top: 0;
@@ -57,6 +43,21 @@ body {
     z-index: 9999;
 }
 
+/* Animation */
+
+@keyframes scale-in-ver-bottom {
+    0% {
+      transform: scaleX(0);
+      transform-origin: 0% 100%;
+      opacity: 1;
+    }
+    100% {
+      transform: scaleX(0.5);
+      transform-origin: 0% 100%;
+      opacity: 1;
+    }
+}
+
 @keyframes fadeIn {
     0% {
       opacity: 1;
@@ -67,7 +68,32 @@ body {
     }
 }
 
-/* Animation */
+.simple-fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+.simple-fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes simple-fade-In {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes simple-fade-Out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 .anim-typewriter {
     animation: typewriter 4s steps(44) 1s 1 normal both,
                blinkTextCursor 500ms steps(44) infinite normal;
@@ -76,11 +102,6 @@ body {
 @keyframes typewriter{
     from {width: 0;}
     to {width: 100%;}
-}
-
-@keyframes blinkTextCursor{
-    from{border-right-color: rgba(255,255,255,.75);}
-    to{border-right-color: transparent;}
 }
 
 .scale-in-hor-left {
@@ -103,6 +124,7 @@ body {
 .flip-in-hor-top {
     animation: flip-in-hor-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
 @keyframes flip-in-hor-top {
     0% {
       transform: rotateX(-80deg);
@@ -113,6 +135,7 @@ body {
       opacity: 1;
     }
 }
+
 
 a:link {
     text-decoration: none;
@@ -604,31 +627,31 @@ html, body {
 #B1 {
     grid-column: 2;
     grid-row: 1;
-    width: 9rem;
+    width: 4rem;
 }
 
 #A2 {
     grid-column: 1;
     grid-row: 2;
-    width: 3rem;
+    width: 6rem;
 }
 
 #B3 {
     grid-column: 2;
     grid-row: 3;
-    width: 4rem;
+    width: 5rem;
 }
 
 #A4 {
     grid-column: 1;
     grid-row: 4;
-    width: 6rem;
+    width: 7rem;
 }
 
 #B5 {
     grid-column: 2;
     grid-row: 5;
-    width: 6rem;
+    width: 4rem;
 }
 
 #main-content hr {
@@ -668,47 +691,61 @@ html, body {
     width: 100%;
 }
 
-#about-main-new {
+#about-main {
     width: 100%;
     height: 100%;
     background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#about-presentation {
+#about-section {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    width: 80%;
+    width: 70%;
     justify-self: center;
     justify-content: center;
     background: none;
 
-    margin-top: calc(75px + 5%);
+    margin-top: 150px;
+    
+    opacity: 1;
+    transition: 0.5s ease-in-out; /* Smooth fade effect */
 }
 
-#about-presentation h1 {
-    color: white;
+/* Hidden state for fade-out */
+#about-section.hidden {
+    opacity: 0; /* Fully transparent */
+}
+
+#about-section h1 {
+    color: #0a0b0a;
     font-size: 60px;
     font-weight: bold;
-    mix-blend-mode: difference;
+    text-align: center;
 }
 
-#about-presentation p {
-    color: white;
-    mix-blend-mode: difference;
-    margin-top: 1%;
+#about-section p {
+    color: #0a0b0a;
     text-align: justify;
 
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.75rem;
+    background-color: rgba(39, 43, 39, 0.10);
+    padding: 20px;
+    margin: 1% 0 1% 0;
+    backdrop-filter: blur(1px);   
 }
 
 .about-buttons {
-    background-color:white;
+    background-color: transparent;
     color: #0a0b0a;
     border: 2px solid #0a0b0a;
+
     height: 40px;
-    width: 9rem;
     padding-inline: 10px;
     font-size: 18px;
     transition: ease 0.3s;
@@ -717,13 +754,36 @@ html, body {
     vertical-align: middle;
     display: table-cell;
     margin: 0 auto;
-    margin-top: 2%;
+    margin-top: 1.5%;
 }
 
 .about-buttons:hover {
     background-color: #0a0b0a;
     color: white;
-    border-color: #272b27;
+    border-color: #0a0b0a;
+}
+
+#about-section a {
+    color: #0a0b0a;
+    font-weight: bold;
+    transition: 0.1s ease-in-out;
+}
+
+#about-section a:hover {
+    background-color: #9daf9d80;
+}
+
+.to-notice {
+    font-weight: bold;
+    color: #0a0b0a!important;
+    font-size: 22px;
+    text-align: center;
+}
+
+#dash-separator {
+    border: #0a0b0a dashed 1px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 /* ==================== THEMES SECTION ==================== */
