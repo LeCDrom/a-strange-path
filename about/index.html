@@ -15,35 +15,42 @@
 </head>
 
 <body id="about-body">
+    <!-- Background image -->
     <div id="white-background"></div>
+
+    <!-- Page transition -->
     <div id="load"></div>
     <header id="fixed-header">
-        <a href="../index.html" id="small-title" class="title">A Strange Path</a>
+        <a href="../index.html" id="small-title" class="title" title="A Strange Path">A Strange Path</a>
         <nav id="fixed-header-nav">
-            <button class="header-buttons" onclick="window.location.href='../index.html'">Home</button>
-            <button class="header-buttons" onclick="window.location.href='../guide/'">How to play</button>
-            <button class="header-buttons" onclick="window.location.href='../about/'">About</button>
-            <button class="header-buttons" onclick="window.location.href='https\://github.com/LeCDrom/'">My
+            <button class="header-buttons" onclick="window.location.href='../index.html'" title="Home">Home</button>
+            <button class="header-buttons" onclick="window.location.href='../guide/'" title="How to play">How to play</button>
+            <button class="header-buttons" onclick="window.location.href='../about/'" title="About">About</button>
+            <button class="header-buttons" onclick="window.location.href='https\://github.com/LeCDrom/'" title="My GitHub">My
                 GitHub</button>
-            <button class="header-buttons" id="theme-toggle"><i class="fa-solid fa-sun"></i></button>
+            <button class="header-buttons" id="theme-toggle" title="Change theme"><i class="fa-solid fa-sun"></i></button>
         </nav>
     </header>
 
     <main id="about-main">
         <section id="about-section">
-            <!-- Replaced by script -->
             
+            <!-- Replaced by script -->
             <h1 id="about-h1"></h1>
             <p id="about-p"></p>
             <button id="about-button" class="about-buttons">About the project</button>
-            
             <!-- Replaced by script -->
+             
         </section>
     </main>
 
-    <footer>
-
+    <footer id="relative-footer">
+        <!-- Footer -->
+        <p>Projet final SaÉ 1.14 2024</p>
+        <p>DAIRIN Côme</p>  
     </footer>
+
+    <!-- Scripts -->
     <script src="../js/theme_switch.js"></script>
     <script src="../js/about_switch.js"></script>
 </body>

@@ -17,14 +17,13 @@
 <body id="guide-body">
     <div id="load"></div>
     <header id="fixed-header">
-        <a href="../index.html" id="small-title" class="title">A Strange Path</a>
+        <a href="../index.html" id="small-title" class="title" title="A Strange Path">A Strange Path</a>
         <nav id="fixed-header-nav">
-            <button class="header-buttons" onclick="window.location.href='../index.html'">Home</button>
-            <button class="header-buttons" onclick="window.location.href='../guide/'">How to play</button>
-            <button class="header-buttons" onclick="window.location.href='../about/'">About</button>
-            <button class="header-buttons" onclick="window.location.href='https\://github.com/LeCDrom/'">My
-                GitHub</button>
-            <button class="header-buttons" id="theme-toggle"><i class="fa-solid fa-sun"></i></button>
+            <button class="header-buttons" onclick="window.location.href='../index.html'" title="Home">Home</button>
+            <button class="header-buttons" onclick="window.location.href='../guide/'" title="How to play">How to play</button>
+            <button class="header-buttons" onclick="window.location.href='../about/'" title="About">About</button>
+            <button class="header-buttons" onclick="window.location.href='https\://github.com/LeCDrom/'" title="My GitHub">My GitHub</button>
+            <button class="header-buttons" id="theme-toggle" title="Change theme"><i class="fa-solid fa-sun"></i></button>
         </nav>
     </header>
 
@@ -42,10 +41,9 @@
 
         <hr id="quote-separator">
 
-        <section id="main-content">
+        <section id="about-content">
             <div id="content-container">
 
-            
                 <h1 class="question">Where are you?</h1>
                 <p>
                     <span class="bold">You don't know.</span><br>
@@ -56,7 +54,7 @@
                 <h1 class="question">Who are you?</h1>
                 <p><span class="bold">You don't remember.</span><br>
                     Your memory only consists of some vague and distant fragments;<br>
-                    Your identity seems to have been corrupted by something, preventing you from accessing them...
+                    It seems to have been altered by something, preventing you from accessing them...
                 </p>
                 <br>
                 <h1 class="question">Why are you here?</h1>
@@ -64,21 +62,37 @@
                     This place does not feel real;<br>
                     — You know you are not supposed to be here —
                 </p>
+
             </div>
             <div id="useless-buttons-container">
-                <button class="useless-buttons" id="B1">The</button>
-                <button class="useless-buttons" id="A2">Forest</button>
-                <button class="useless-buttons" id="B3">Sees</button>
-                <button class="useless-buttons" id="A4">Through</button>
-                <button class="useless-buttons" id="B5">You</button>
+                <button class="useless-buttons" id="B1" title="ehT">The</button>
+                <button class="useless-buttons" id="A2" title="tseroF">Forest</button>
+                <button class="useless-buttons" id="B3" title="seeS">Sees</button>
+                <button class="useless-buttons" id="A4" title="hguorhT">Through</button>
+                <button class="useless-buttons" id="B5" title="uoY">You</button>
             </div>
-            <hr>
+        </section>
+        <hr id="section-separator">
+        <section id="guide">
+            <h1 id="guide-title">• —— The game —— •</h1>
+            <p id="introduction">
+                You, the player, play as a character that has woken up in strange forest.<br>
+                The rules are quite simple as there are no right or wrong answers;<br>
+                You only have to make choices based on the given context.<br>
+                <br>
+                As of now, the game is not complete. Auto save will later be implemented.<br>
+                <br>
+                <span id="good-luck">Good luck!</span>
+            </p>
         </section>
     </main>
 
-    <footer>
-
+    <footer id="relative-footer">
+        <!-- Footer -->
+        <p>Projet final SaÉ 1.14 2024</p>
+        <p>DAIRIN Côme</p>  
     </footer>
+
     <script src="../js/theme_switch.js"></script>
 </body>
 
