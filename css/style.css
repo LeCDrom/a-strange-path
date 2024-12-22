@@ -8,6 +8,12 @@
     color: #9cae9c;
 }
 
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
 body {
     margin: 0;
     background-color: #0a0b0a;
@@ -173,14 +179,686 @@ body {
     color: #9cae9c;
 }
 
+/* ==================== MEDIA QUERIES ==================== */
+@media screen and (min-width: 1024px) {
+/* ===================== LAPTOP LAYOUT =================== */
+    
+    /* --------- FRONT PAGE SECTION ---------*/
+
+    #wide-nav-container {
+        display: none;
+    }
+
+    #main-body {
+        background-attachment: fixed !important;
+    }
+
+    #main-footer {
+        background: linear-gradient(180deg, rgba(34, 37, 34, 0.45) 0%, rgba(10, 11, 10, 0.45) 15%, rgba(10, 11, 10, 0.45) 100%);
+    }
+
+    .fa-bars {
+        display: none!important;
+    }
+
+    #main-header {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #main-title {
+        margin-right: 5%;
+        margin-top: 10px;
+    }
+
+    #main-nav {
+        display: flex;
+        font-size: 20px;
+    }
+
+    #presentation {
+        height: 18rem;
+    }
+
+    #presentation h1 {
+        font-size: 65px;
+        width: 25rem;
+    }
+
+    #presentation button {
+        font-size: 20px;
+    }
+
+    /* --------- GAME HEADER SECTION ---------*/
+    
+    #fixed-header {
+        height: 75px;
+    }
+    
+    #small-title {
+        font-size: 40px;
+    }
+    
+    #fixed-header button {
+        height: 40px;
+        font-size: 18px;
+    }
+    
+    #theme-toggle {
+        width: 40px;
+    }
+
+    /* ==================== GAME SECTION ==================== */
+
+    .game-section {
+        font-size: 20px;
+        min-height: 4rem;
+    }
+
+    #choice-description {
+        margin-top: 6.75rem;
+        min-height: 3rem;
+    }
+
+    .game-section button {
+        font-size: 15px;
+    }
+
+    /* ==================== HOW TO PLAY SECTION ==================== */
+
+    #quote-container {
+        margin-top: calc(75px + 3rem);
+    }
+
+    #quote p {
+        font-size: 30px;
+    }
+
+    #author {
+        font-size: 18px;
+    }
+
+    #quote-separator {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    #content-container {
+        gap: 10px;
+    }
+
+    .question {
+        font-size: 35px;
+    }
+
+    #content-container p {
+        font-size: 18px;
+        line-height: 1.75rem;
+    }
+
+    #useless-buttons-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .useless-buttons {
+        height: 40px;
+        font-size: 18px;
+    }
+
+    #B1 {
+        grid-column: 2;
+        width: 4rem;
+    }
+
+    #A2 {
+        grid-column: 1;
+        width: 6rem;
+    }
+
+    #B3 {
+        grid-column: 2;
+        width: 5rem;
+    }
+
+    #A4 {
+        grid-column: 1;
+        width: 7rem;
+    }
+
+    #B5 {
+        grid-column: 2;
+        width: 4rem;
+    }
+
+    #section-separator {
+        margin-bottom: 4rem;
+    }
+
+    #guide h1 {
+        font-size: 50px;
+    }
+
+    #guide {
+        font-size: 18px;
+        line-height: 1.75rem;
+    }
+
+    /* ==================== ABOUT SECTION ==================== */
+
+    #about-section {
+        width: 60%;
+        margin-top: 150px;
+    }
+
+    #about-section h1 {
+        font-size: 60px;
+    }
+
+    #about-section p {
+        font-size: 18px;
+        line-height: 1.75rem;
+    }
+
+    .about-buttons {
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .to-notice {
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+/* ===================== TABLET LAYOUT ==================== */
+    
+    /* --------- FRONT PAGE SECTION ---------*/
+
+    #wide-nav-container {
+        display: none;
+    }
+
+    #main-footer {
+        background: linear-gradient(180deg, rgba(34, 37, 34, 1) 0%, rgba(10, 11, 10, 1) 15%, rgba(10, 11, 10, 1) 100%);
+    }
+
+    .fa-bars {
+        display: none!important;
+    }
+
+    #main-header {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #main-title {
+        margin-right: 5%;
+        margin-top: 10px;
+    }
+
+    #main-title.title {
+        font-size: 20px;
+    }
+
+    .dead-link {
+        font-size: 15px;
+    }
+
+    .link {
+        font-size: 15px;
+    }
+
+    #main-nav {
+        display: flex;
+        font-size: 15px;
+    }
+
+    #presentation {
+        height: 13rem;
+        align-items: center; 
+        
+    }
+
+    #presentation h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    #presentation p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #presentation button {
+        font-size: 15px;
+    }
+
+    #main-footer p {
+        font-size: 13px;
+    }
+
+    /* --------- GAME HEADER SECTION ---------*/
+    
+    #fixed-header {
+        height: 65px;
+    }
+    
+    #small-title {
+        font-size: 30px;
+    }
+    
+    #fixed-header-nav {
+        padding-right: 20px;
+        gap: 20px;
+    }
+    
+    #fixed-header button {
+        height: 35px;
+        font-size: 15px;
+    }
+    
+    #theme-toggle {
+        width: 35px;
+        height: 35px;
+        padding-inline: 10px;
+        font-size: 18px;
+    }
+
+    /* ==================== GAME SECTION ==================== */
+
+    #relative-footer p {
+        font-size: 13px;
+    }
+
+    .game-section {
+        font-size: 15px;
+        min-height: 3.5rem;
+    }
+
+    #choice-description {
+        font-size: 14px;
+        margin-top: 6.25rem;
+        min-height: 2.5rem;
+    }
+
+    .game-section button {
+        font-size: 13px;
+    }
+
+    /* ==================== HOW TO PLAY SECTION ==================== */
+
+    #quote-container {
+        margin-top: calc(65px + 3rem);
+    }
+
+    #quote p {
+        font-size: 25px;
+    }
+
+    #author {
+        font-size: 14px;
+    }
+
+    #content-container {
+        gap: 10px;
+    }
+
+    .question {
+        font-size: 28px;
+    }
+
+    #content-container p {
+        font-size: 14px;
+        line-height: 1.25rem;
+    }
+
+    #useless-buttons-container {
+        grid-template-columns: 1fr 0;
+    }
+
+
+    .useless-buttons {
+        height: 35px;
+        padding-inline: 10px;
+        font-size: 15px;
+    }
+
+    #B1 {
+        grid-column: 1;
+        width: 4rem;
+    }
+
+    #A2 {
+        grid-column: 1;
+        width: 6rem;
+    }
+
+    #B3 {
+        grid-column: 1;
+        width: 5rem;
+    }
+
+    #A4 {
+        grid-column: 1;
+        width: 7rem;
+    }
+
+    #B5 {
+        grid-column: 1;
+        width: 4rem;
+    }
+
+    #section-separator {
+        margin-bottom: 3rem;
+    }
+
+    #guide h1 {
+        font-size: 40px;
+    }
+
+    #guide {
+        font-size: 15px;
+        line-height: 1.25rem;
+    }
+
+    #good-luck {
+        font-size: 25px;
+    }
+
+    #relative-footer {
+        height: 80px;
+    }
+
+    /* ==================== ABOUT SECTION ==================== */
+
+    #about-section {
+        width: 70%;
+        margin-top: 125px;
+    }
+
+    #about-section h1 {
+        font-size: 45px;
+    }
+
+    #about-section p {
+        font-size: 14px;
+        line-height: 1.25rem;
+    }
+
+    .about-buttons {
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .to-notice {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    /* ===================== MOBILE LAYOUT ==================== */
+            
+    /* --------- FRONT PAGE SECTION ---------*/
+    
+    #wide-nav-container {
+        position: absolute;
+        top: 0;
+        bottom: -80px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        z-index: 999;
+        background-color: rgb(39, 43, 39, 0.80);
+    }
+
+    #hidden-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 30%;
+        justify-content: space-between;
+        margin-top: 25vh;
+    }
+
+    #hidden-nav a {
+        font-size: 30px;
+    }
+
+    #main-footer {
+        background: linear-gradient(180deg, rgba(34, 37, 34, 1) 0%, rgba(10, 11, 10, 1) 15%, rgba(10, 11, 10, 1) 100%);
+    }
+
+    #main-header {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fa-bars {
+        font-size: 25px;
+        position: absolute;
+        left: 2rem;
+        color: white;
+        transition: 0.3s ease;
+        z-index: 9999;
+    }
+
+    .fa-bars:hover {
+        text-shadow: 0px 0px 3px white;
+    }
+
+    #main-title {
+        margin-top: 2px;
+        margin-right: 0;
+    }
+
+    #main-title.title {
+        font-size: 20px;
+    }
+
+    .dead-link {
+        font-size: 15px;
+    }
+
+    .link {
+        font-size: 15px;
+    }
+
+    #main-nav {
+        font-size: 15px;
+        flex-direction: column;
+        display: none;
+    }
+
+    #presentation {
+        height: 13rem;
+        align-items: center;
+    }
+
+    #presentation h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    #presentation p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #presentation button {
+        font-size: 15px;
+    }
+
+    #main-footer p {
+        font-size: 13px;
+    }
+
+    /* --------- GAME HEADER SECTION ---------*/
+    
+    #fixed-header {
+        height: 65px;
+    }
+    
+    #small-title {
+        font-size: 30px;
+    }
+    
+    #fixed-header-nav {
+        padding-right: 20px;
+        gap: 20px;
+    }
+    
+    #fixed-header button {
+        height: 35px;
+        font-size: 15px;
+    }
+    
+    #theme-toggle {
+        width: 35px;
+        height: 35px;
+        padding-inline: 10px;
+        font-size: 18px;
+    }
+
+    /* ==================== GAME SECTION ==================== */
+
+    #relative-footer p {
+        font-size: 13px;
+    }
+
+    .game-section {
+        font-size: 15px;
+        min-height: 3.5rem;
+    }
+
+    #choice-description {
+        font-size: 14px;
+        margin-top: 6.25rem;
+        min-height: 2.5rem;
+    }
+
+    .game-section button {
+        font-size: 13px;
+    }
+
+    /* ==================== HOW TO PLAY SECTION ==================== */
+
+    #quote-container {
+        margin-top: calc(65px + 3rem);
+    }
+
+    #quote p {
+        font-size: 25px;
+    }
+
+    #author {
+        font-size: 14px;
+    }
+
+    #content-container {
+        gap: 10px;
+    }
+
+    .question {
+        font-size: 28px;
+    }
+
+    #content-container p {
+        font-size: 14px;
+        line-height: 1.25rem;
+    }
+
+    #useless-buttons-container {
+        grid-template-columns: 1fr 0;
+    }
+
+
+    .useless-buttons {
+        height: 35px;
+        padding-inline: 10px;
+        font-size: 15px;
+    }
+
+    #B1 {
+        grid-column: 1;
+        width: 4rem;
+    }
+
+    #A2 {
+        grid-column: 1;
+        width: 6rem;
+    }
+
+    #B3 {
+        grid-column: 1;
+        width: 5rem;
+    }
+
+    #A4 {
+        grid-column: 1;
+        width: 7rem;
+    }
+
+    #B5 {
+        grid-column: 1;
+        width: 4rem;
+    }
+
+    #section-separator {
+        margin-bottom: 3rem;
+    }
+
+    #guide h1 {
+        font-size: 40px;
+    }
+
+    #guide {
+        font-size: 15px;
+        line-height: 1.25rem;
+    }
+
+    #good-luck {
+        font-size: 25px;
+    }
+
+    #relative-footer {
+        height: 80px;
+    }
+
+    /* ==================== ABOUT SECTION ==================== */
+
+    #about-section {
+        width: 70%;
+        margin-top: 125px;
+    }
+
+    #about-section h1 {
+        font-size: 45px;
+    }
+
+    #about-section p {
+        font-size: 14px;
+        line-height: 1.25rem;
+    }
+
+    .about-buttons {
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .to-notice {
+        font-size: 18px;
+    }
+
+}
+
 /* ==================== FRONT PAGE SECTION ==================== */
 
 #main-header {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 16%;
-    justify-content: space-between;
     background: rgb(52, 56, 52);
     background: linear-gradient(0deg, rgba(34, 37, 34, 0.45) 0%, rgba(10, 11, 10, 0.45) 15%, rgba(10, 11, 10, 0.45143995098039214) 100%);
     z-index: 9999;
@@ -188,28 +866,28 @@ body {
     backdrop-filter: blur(1.5px);
     box-shadow: 0px 0px 8px 2px rgba(10, 11, 10, 0.45);
     border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+
+    flex-direction: row;
+    align-items: center;
+    height: 16%;
 }
 
 #main-title {
-    margin-top: 10px;
     font-size: 30px;
-    margin-right: 5%;
     color: white;
     font-family: "Courier Prime", serif;
 }
 
 #main-nav {
-    display: flex;
     margin-left: 5%;
     align-items: center;
     gap: 3vw;
     flex-direction: row;
-    font-size: 20px;
 }
 
 .dead-link {
-    position: relative;
     color: white;
+    position: relative;
 }
 
 .dead-link::after {
@@ -243,18 +921,12 @@ body {
     content: '';
     position: absolute;
     bottom: 0;
-    /* Position it at the bottom of the text */
     left: 50%;
-    /* Start from the left */
     width: 0;
-    /* Initially, the line is not visible */
     height: 2px;
-    /* Thickness of the underline */
     background-color: white;
-    /* Color of the underline */
     transform: translateX(-50%);
     transition: width 0.3s ease;
-    /* Smooth animation */
 }
 
 .link:hover::after {
@@ -262,10 +934,9 @@ body {
     /* Expand the line to full width on hover */
 }
 
-.main-body {
-    background-image: url(../images/background_iridescent.jpg);
+#main-body {
+    background: url(../images/background_iridescent.jpg) ;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     background-position: center center;
     image-rendering: pixelated;
@@ -273,64 +944,40 @@ body {
     opacity: 1;
 }
 
-#presentation-hidden {
+#presentation {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-inline: 5%;
-    height: 18rem;
     margin-top: 10vh;
     margin-bottom: 10vh;
-
     max-width: 100%;
-    /* Ensure it doesn't overflow */
-    position: relative;
-    z-index: -1;
-}
-
-#presentation,
-#presentation-hidden {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-inline: 5%;
-    height: 18rem;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-
-    max-width: 100%;
-    /* Ensure it doesn't overflow */
     position: relative;
 }
 
-#presentation h1,
-#presentation-hidden h1 {
+#presentation h1 {
     color: white;
     font-weight: bold;
-    font-size: 65px;
 }
 
-#presentation p,
-#presentation-hidden p {
+#presentation p {
     color: white;
 }
 
-#presentation button,
-#presentation-hidden button {
+#presentation button {
     color: white;
     background-color: transparent;
     border-color: white;
-    font-size: 20px;
-    padding-inline: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
     transition: 0.3s ease;
     margin: 0;
     width: fit-content;
+    
+    padding-inline: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-#presentation button:hover,
-#presentation-hidden button:hover {
+#presentation button:hover {
     box-shadow: 0px 0px 20px 0px white;
     color: #0a0b0a;
     background-color: white;
@@ -338,29 +985,29 @@ body {
 
 #main-content {
     display: flex;
-    flex-direction: column;
     background-color: rgba(10, 11, 10, 0.45);
+
+    flex-direction: column;
     margin-inline: 5%;
     height: 600px;
 }
 
 #main-footer {
     position: absolute;
-    bottom: -80px;
     right: 0;
     left: 0;
-
-    background: rgb(52, 56, 52);
-    background: linear-gradient(180deg, rgba(34, 37, 34, 0.45) 0%, rgba(10, 11, 10, 0.45) 15%, rgba(10, 11, 10, 0.45143995098039214) 100%);
-    height: 80px;
     display: flex;
+
+    backdrop-filter: blur(1.5px);
+    box-shadow: 0px 0px 8px 2px rgba(10, 11, 10, 0.45);
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+
+    bottom: -80px;
+    height: 80px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 5px;
-    backdrop-filter: blur(1.5px);
-    box-shadow: 0px 0px 8px 2px rgba(10, 11, 10, 0.45);
-    border-top: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 /* #main-content {
@@ -382,7 +1029,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 75px;
     border-bottom: 2px solid #9cae9c;
     justify-content: space-between;
     background-color: #0a0b0a;
@@ -395,7 +1041,6 @@ body {
 
 #small-title {
     margin-top: 10px;
-    font-size: 40px;
     margin-left: 20px;
     width: fit-content;
     font-family: "Special Elite", serif;
@@ -414,9 +1059,7 @@ body {
     color: #9cae9c;
     background-color: #0a0b0a;
     border: 2px solid #9cae9c;
-    height: 40px;
     padding-inline: 10px;
-    font-size: 18px;
     transition: ease 0.3s;
     cursor: pointer;
 }
@@ -425,8 +1068,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
     color: #9cae9c;
     background-color: #0a0b0a;
     border: 2px solid #9cae9c;
@@ -452,17 +1093,13 @@ body {
 
 /* ==================== GAME SECTION ==================== */
 
+#game-main {
+    height: 100%;
+}
+
 #main-section {
     display: flex;
     flex-direction: column;
-}
-
-.journal-section,
-.inventory-section {
-    width: 25%;
-    max-height: 100vh;
-    overflow-y: auto;
-    /* Allow scrolling for journal and inventory */
 }
 
 .game-container {
@@ -472,32 +1109,27 @@ body {
 }
 
 .game-section {
-    width: 50%;
+    width: 100%;
     padding-inline: 10px;
     background-color: #181a18;
-    font-size: 20px;
     padding-top: 1rem;
     text-align: center;
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-height: 4rem;
     border-top: 2px solid #272b27;
     border-bottom: 2px solid #272b27;
 }
 
 #choice-description {
     display: inline-block;
-    font-size: 16px;
     text-align: center;
-    margin-top: 6.75rem;
     padding: 1rem;
     background-color: #181a18;
     border-top: 2px solid #272b27;
     border-bottom: 2px solid #272b27;
     font-style: italic;
     margin-bottom: 2rem;
-    min-height: 3rem;
     box-shadow: 0px 0 10px 1px #9cae9c;
 }
 
@@ -530,7 +1162,6 @@ body {
     background-color: #181a18;
     border: 2px solid #9cae9c;
     padding-inline: 10px;
-    font-size: 15px;
     transition: ease 0.3s;
     cursor: pointer;
     display: inline-block;
@@ -543,33 +1174,19 @@ body {
     color: #181a18;
 }
 
-.journal-section {
-    background-color: #181a18;
-    border-top: 2px solid #272b27;
-    border-bottom: 2px solid #272b27;
-}
-
-.inventory-section {
-    background-color: #181a18;
-    border-top: 2px solid #272b27;
-    border-bottom: 2px solid #272b27;
-}
-
 /* ==================== HOW TO PLAY SECTION ==================== */
 
-.fa-compass {
-    font-size: 20px;
+#guide-main {
+    padding-bottom: 10rem;
 }
 
 #quote-container {
-    margin-top: calc(75px + 3rem);
-    margin-left: 2rem;
+    margin-inline: 2rem;
     height: auto;
 }
 
 #quote p {
     font-family: "Courier prime", sans-serif;
-    font-size: 30px;
     padding-right: 1rem;
 }
 
@@ -580,9 +1197,7 @@ body {
 }
 
 #author {
-    text-shadow: 10 0 20px transparent, 0px 0 2px #9cae9cc9, -10px 0 2px #9cae9cc9;
     width: fit-content;
-    font-size: 18px;
     font-style: italic;
     text-align: left;
     margin-top: 200px;
@@ -597,8 +1212,7 @@ body {
     border-color: #272b27;
     border-width: 1px;
     border-style: solid;
-    margin-right: 2rem;
-    margin-left: 2rem;
+    margin-inline: 2rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
@@ -621,20 +1235,13 @@ body {
 
 .question {
     font-weight: bold;
-    font-size: 35px;
-}
-
-#content-container p {
-    font-size: 18px;
-    line-height: 1.75rem;
 }
 
 #useless-buttons-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     margin-right: 2rem;
-    justify-items: center;
     align-items: center;
+    justify-items: end;
 }
 
 
@@ -642,9 +1249,7 @@ body {
     color: #9cae9c;
     background-color: #0a0b0a;
     border: 2px solid #9cae9c;
-    height: 40px;
     padding-inline: 10px;
-    font-size: 18px;
     transition: ease 0.3s;
     cursor: pointer;
 }
@@ -656,31 +1261,26 @@ body {
 }
 
 #B1 {
-    grid-column: 2;
     grid-row: 1;
     width: 4rem;
 }
 
 #A2 {
-    grid-column: 1;
     grid-row: 2;
     width: 6rem;
 }
 
 #B3 {
-    grid-column: 2;
     grid-row: 3;
     width: 5rem;
 }
 
 #A4 {
-    grid-column: 1;
     grid-row: 4;
     width: 7rem;
 }
 
 #B5 {
-    grid-column: 2;
     grid-row: 5;
     width: 4rem;
 }
@@ -690,7 +1290,6 @@ body {
     border-width: 1px;
     border-style: solid;
 
-    margin-bottom: 4rem;
     margin-top: 2rem;
     margin-inline: 2rem;
 }
@@ -706,15 +1305,12 @@ body {
 }
 
 #guide h1 {
-    font-size: 50px;
     font-weight: bold;
     margin-bottom: 2rem;
 }
 
 #guide {
-    font-size: 18px;
     text-align: center;
-    line-height: 1.75rem;
 
     justify-self: center;
     margin-inline: 2rem;
@@ -726,8 +1322,6 @@ body {
 }
 
 #relative-footer {
-    margin-top: 8rem;
-    background: rgb(52, 56, 52);
     background: linear-gradient(180deg, rgba(34, 37, 34, 0.45) 0%, rgba(10, 11, 10, 0.45) 15%, rgba(10, 11, 10, 0.45143995098039214) 100%);
     height: 80px;
     display: flex;
@@ -757,12 +1351,6 @@ body {
     /* Keep it behind the content */
 }
 
-html,
-body {
-    height: 100%;
-    width: 100%;
-}
-
 #about-main {
     width: 100%;
     height: 100%;
@@ -776,13 +1364,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    width: 60%;
     justify-self: center;
     justify-content: center;
     background: none;
-
-    margin-top: 150px;
 
     opacity: 1;
     transition: 0.5s ease-in-out;
@@ -797,7 +1381,6 @@ body {
 
 #about-section h1 {
     color: #0a0b0a;
-    font-size: 60px;
     font-weight: bold;
     text-align: center;
 }
@@ -805,9 +1388,6 @@ body {
 #about-section p {
     color: #0a0b0a;
     text-align: justify;
-
-    font-size: 18px;
-    line-height: 1.75rem;
     background-color: rgba(39, 43, 39, 0.10);
     padding: 20px;
     margin: 1% 0 1% 0;
@@ -819,9 +1399,7 @@ body {
     color: #0a0b0a;
     border: 2px solid #0a0b0a;
 
-    height: 40px;
     padding-inline: 10px;
-    font-size: 18px;
     transition: ease 0.3s;
     cursor: pointer;
     text-align: center;
@@ -850,7 +1428,6 @@ body {
 .to-notice {
     font-weight: bold;
     color: #0a0b0a!important;
-    font-size: 22px;
     text-align: center;
 }
 
