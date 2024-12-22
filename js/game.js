@@ -1,4 +1,5 @@
-let currentChoiceId = 'start'; // Start from the first choice
+// Start from the first choice
+let currentChoiceId = 'start';
 
 // Choices data
 const choices = [
@@ -126,8 +127,6 @@ function displayChoice(choiceId) {
 
   });
 
-  // Scroll to current choice
-  currentChoiceContainer.scrollIntoView({ behavior: 'smooth' });
 }
 
 // Handle choice selection
