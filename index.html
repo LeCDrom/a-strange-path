@@ -14,10 +14,11 @@
     <script src="https://kit.fontawesome.com/208b9051bf.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="main-body">
+<body id="main-body">
     <div id="load"></div>
     <header id="main-header">
-        <nav id="main-nav">
+        <i class="fa-solid fa-bars"></i> <!-- Only displayed on mobile -->
+        <nav id="main-nav"> <!-- Not displayed on mobile -->
             <a href="https://github.com/LeCDrom/" class="fa-brands fa-github-alt" title="GitHub"></a>
             <a href="about/" class="link" title="About">About</a>
             <a href="guide/" class="link" title="How to Play">How to play</a>
@@ -27,9 +28,19 @@
     </header>
 
     <main id="front-main">
+
+        <div id="wide-nav-container"> <!-- Only displayed on mobile -->
+            <nav id="hidden-nav">
+                <a class="dead-link" title="Home">Home</a>
+                <a href="guide/" class="link" title="How to Play">How to play</a>
+                <a href="about/" class="link" title="About">About</a>
+                <a href="https://github.com/LeCDrom/" class="fa-brands fa-github-alt" title="GitHub"></a>
+            </nav>
+        </div>
+
         <article id="presentation">
             <div id="title-subtitle">
-                <h1>A Strange<br>Path</h1>
+                <h1>A Strange Path</h1>
                 <p>- a choice-based adventure game -</p>
             </div>
             <button class="header-buttons" title="Begin your adventure" onclick="window.location.href='game/'">Enter</button>
