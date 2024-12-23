@@ -14,6 +14,10 @@ html, body {
     overflow: auto;
 }
 
+html {
+    background-color: black;
+}
+
 body {
     margin: 0;
     background-color: #0a0b0a;
@@ -185,24 +189,19 @@ body {
     
     /* --------- FRONT PAGE SECTION ---------*/
 
-    #wide-nav-container {
-        display: none;
+    .displayed-mobile {
+        display: none!important;
     }
 
     #main-body {
-        background-attachment: fixed !important;
+        background-attachment: fixed!important;
     }
 
     #main-footer {
         background: linear-gradient(180deg, rgba(34, 37, 34, 0.45) 0%, rgba(10, 11, 10, 0.45) 15%, rgba(10, 11, 10, 0.45) 100%);
     }
 
-    .fa-bars {
-        display: none!important;
-    }
-
     #main-header {
-        align-items: center;
         justify-content: space-between;
     }
 
@@ -346,6 +345,10 @@ body {
 
     /* ==================== ABOUT SECTION ==================== */
 
+    #about-body {
+        background-attachment: fixed!important;
+    }
+
     #about-section {
         width: 60%;
         margin-top: 150px;
@@ -369,6 +372,10 @@ body {
         font-size: 22px;
     }
 
+    #relative-footer {
+        background: linear-gradient(180deg, rgba(34, 37, 34, 0.45) 0%, rgba(10, 11, 10, 0.45) 15%, rgba(10, 11, 10, 0.45) 100%);
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -376,30 +383,36 @@ body {
     
     /* --------- FRONT PAGE SECTION ---------*/
 
-    #wide-nav-container {
+    #close {
         display: none;
+    }
+
+    #wide-nav-container {
+        display: block;
     }
 
     #main-footer {
         background: linear-gradient(180deg, rgba(34, 37, 34, 1) 0%, rgba(10, 11, 10, 1) 15%, rgba(10, 11, 10, 1) 100%);
     }
 
-    .fa-bars {
-        display: none!important;
+    .fa-compass {
+        display: block;
+    }
+
+    #close {
+        display: flex;
     }
 
     #main-header {
-        align-items: center;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     #main-title {
-        margin-right: 5%;
         margin-top: 10px;
     }
 
     #main-title.title {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .dead-link {
@@ -411,8 +424,7 @@ body {
     }
 
     #main-nav {
-        display: flex;
-        font-size: 15px;
+        display: none;
     }
 
     #presentation {
@@ -569,6 +581,7 @@ body {
 
     #relative-footer {
         height: 80px;
+        background: linear-gradient(180deg, rgba(34, 37, 34, 1) 0%, rgba(10, 11, 10, 1) 15%, rgba(10, 11, 10, 1) 100%);
     }
 
     /* ==================== ABOUT SECTION ==================== */
@@ -602,30 +615,9 @@ body {
     /* ===================== MOBILE LAYOUT ==================== */
             
     /* --------- FRONT PAGE SECTION ---------*/
-    
+
     #wide-nav-container {
-        position: absolute;
-        top: 0;
-        bottom: -80px;
-        left: 0;
-        right: 0;
         display: flex;
-        flex-direction: column;
-        z-index: 999;
-        background-color: rgb(39, 43, 39, 0.80);
-    }
-
-    #hidden-nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 30%;
-        justify-content: space-between;
-        margin-top: 25vh;
-    }
-
-    #hidden-nav a {
-        font-size: 30px;
     }
 
     #main-footer {
@@ -633,21 +625,20 @@ body {
     }
 
     #main-header {
-        align-items: center;
         justify-content: center;
     }
 
-    .fa-bars {
-        font-size: 25px;
-        position: absolute;
-        left: 2rem;
-        color: white;
-        transition: 0.3s ease;
-        z-index: 9999;
+    .fa-compass {
+        display: block;
     }
 
-    .fa-bars:hover {
-        text-shadow: 0px 0px 3px white;
+    #mobile-github {
+        display: block;
+        position: absolute;
+    }
+
+    #close {
+        display: flex;
     }
 
     #main-title {
@@ -656,7 +647,7 @@ body {
     }
 
     #main-title.title {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .dead-link {
@@ -668,8 +659,6 @@ body {
     }
 
     #main-nav {
-        font-size: 15px;
-        flex-direction: column;
         display: none;
     }
 
@@ -689,7 +678,7 @@ body {
     }
 
     #presentation button {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     #main-footer p {
@@ -826,6 +815,7 @@ body {
 
     #relative-footer {
         height: 80px;
+        background: linear-gradient(180deg, rgba(34, 37, 34, 1) 0%, rgba(10, 11, 10, 1) 15%, rgba(10, 11, 10, 1) 100%);
     }
 
     /* ==================== ABOUT SECTION ==================== */
@@ -857,10 +847,84 @@ body {
 
 /* ==================== FRONT PAGE SECTION ==================== */
 
+#mobile-github {
+    font-size: 25px;
+    color: white;
+    transition: 0.3s ease;
+    z-index: 9999;
+    position: absolute;
+    right: 8vw;
+}
+
+#close:hover {
+    text-shadow: 0px 0px 3px #82947e;
+}
+
+#close {
+    margin-top: 3rem;
+    font-size: 35px;
+    transition: 0.3s ease;        
+    /* background: linear-gradient(180deg, rgba(34, 37, 34, 0.45) 0%, rgba(10, 11, 10, 0.45) 15%, rgba(10, 11, 10, 0.45) 100%);
+    backdrop-filter: blur(1.5px);
+    box-shadow: 0px 0px 8px 2px rgba(10, 11, 10, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.18);*/
+    /* border-radius: 10px; */
+    height: 3rem;
+    width: 3rem;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid rgba(255, 255, 255, 0.18); */
+}
+
+#wide-nav-container {
+    position: absolute;
+    top: 0;
+    bottom: -80px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    z-index: 999;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    display: none;
+
+    background: linear-gradient(180deg, rgba(34, 37, 34, 0.6) 0%, rgba(10, 11, 10, 0.6) 15%, rgba(10, 11, 10, 0.6) 100%);
+    box-shadow: 0px 0px 8px 2px rgba(10, 11, 10, 0.45);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+.fa-compass {
+    font-size: 25px;
+    position: absolute;
+    left: 8vw;
+    color: white;
+    transition: 0.3s ease;
+    z-index: 9999;
+}
+
+.fa-compass:hover {
+    text-shadow: 0px 0px 3px white;
+    transform: scale(1.5);
+}
+
+#hidden-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    justify-content: space-between;
+    margin-top: 15vh;
+    padding: 2rem;
+}
+
+#hidden-nav a {
+    font-size: 30px;
+}
+
 #main-header {
     display: flex;
     background: rgb(52, 56, 52);
-    background: linear-gradient(0deg, rgba(34, 37, 34, 0.45) 0%, rgba(10, 11, 10, 0.45) 15%, rgba(10, 11, 10, 0.45143995098039214) 100%);
+    background: linear-gradient(0deg, rgba(34, 37, 34, 0.45) 0%, rgba(10, 11, 10, 0.45) 15%, rgba(10, 11, 10, 0.45) 100%);
     z-index: 9999;
     /* border-bottom: 2px solid #9cae9c; */
     backdrop-filter: blur(1.5px);
@@ -915,6 +979,7 @@ body {
 
 .fa-github-alt:hover {
     transform: scale(1.5);
+    text-shadow: 0px 0px 3px white;
 }
 
 .link::after {
@@ -935,7 +1000,7 @@ body {
 }
 
 #main-body {
-    background: url(../images/background_iridescent.jpg) ;
+    background: url(https://raw.githubusercontent.com/LeCDrom/a-strange-path/refs/heads/main/images/background_iridescent.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -1082,8 +1147,13 @@ body {
     color: #0a0b0a;
 }
 
+#theme-toggle i {
+    transition: ease 0.3s;
+}
+
 #theme-toggle:hover i {
     color: #0a0b0a;
+    transform: scale(1.3) rotate(-45deg);
 }
 
 #main-header button:hover {
@@ -1322,7 +1392,6 @@ body {
 }
 
 #relative-footer {
-    background: linear-gradient(180deg, rgba(34, 37, 34, 0.45) 0%, rgba(10, 11, 10, 0.45) 15%, rgba(10, 11, 10, 0.45143995098039214) 100%);
     height: 80px;
     display: flex;
     flex-direction: column;
@@ -1336,19 +1405,13 @@ body {
 
 /* ==================== ABOUT SECTION ==================== */
 
-#white-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/bottom-trees_resized.jpg);
+#about-body {
+    background: url(https://raw.githubusercontent.com/LeCDrom/a-strange-path/refs/heads/main/images/bottom-trees_resized.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    z-index: -1;
-    /* Keep it behind the content */
+    height: 100vh;
+    opacity: 1;
 }
 
 #about-main {

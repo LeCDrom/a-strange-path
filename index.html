@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Strange Path</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,14 +17,15 @@
 <body id="main-body">
     <div id="load"></div>
     <header id="main-header">
-        <i class="fa-solid fa-bars"></i> <!-- Only displayed on mobile -->
         <nav id="main-nav"> <!-- Not displayed on mobile -->
             <a href="https://github.com/LeCDrom/" class="fa-brands fa-github-alt" title="GitHub"></a>
             <a href="about/" class="link" title="About">About</a>
             <a href="guide/" class="link" title="How to Play">How to play</a>
             <a class="dead-link" title="Home">Home</a>
         </nav>
+        <i class="fa-regular fa-compass displayed-mobile" id="open-menu"></i> <!-- Only displayed on mobile -->
         <a href="index.html" id="main-title" class="title" title="A Strange Path">A Strange Path</a>
+        <a href="https://github.com/LeCDrom/" class="fa-brands fa-github-alt displayed-mobile" id="mobile-github" title="GitHub"></a>
     </header>
 
     <main id="front-main">
@@ -35,6 +36,7 @@
                 <a href="guide/" class="link" title="How to Play">How to play</a>
                 <a href="about/" class="link" title="About">About</a>
                 <a href="https://github.com/LeCDrom/" class="fa-brands fa-github-alt" title="GitHub"></a>
+                <a id="close">X</a>
             </nav>
         </div>
 
@@ -53,6 +55,7 @@
         <p>DAIRIN Côme</p>  
     </footer>
 
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

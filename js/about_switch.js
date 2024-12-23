@@ -17,7 +17,7 @@ const aboutSets = [
     },
     {
         h1: "Behind the project",
-        p: "<div class='to-notice'>The website's design resulted from various choices</div><hr id='dash-separator'>The lack of context, the restricted color palette, and the flat design choices were made to add to the mystery.<br>Just like the character, the player does not know anything when they begin, immersing them deeper into the game.<br>This website was heavily inspired by <a href='../images/liminal_example.jpg'>liminal spaces</a>. These are usually pictures of simple places that were shot in a way that create or amplify \"surreal\" and \"unsettling\" feelings. Each one tells a story, story that I never wrote down until now.",
+        p: "<div class='to-notice'>The website's design resulted from various choices</div><hr id='dash-separator'>The lack of context, the restricted color palette, and the flat design choices were made to add to the mystery.<br>Just like the character, the player does not know anything when they begin, immersing them deeper into the game.<br>This website was heavily inspired by <a href='https://raw.githubusercontent.com/LeCDrom/a-strange-path/refs/heads/main/images/liminal_example.jpg'>liminal spaces</a>. These are usually pictures of simple places that were shot in a way that create or amplify \"surreal\" and \"unsettling\" feelings. Each one tells a story, story that I never wrote down until now.",
         button: "About me"
     }
 ]
