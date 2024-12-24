@@ -261,7 +261,7 @@ body {
 
     #choice-description {
         margin-top: 6.75rem;
-        min-height: 3rem;
+        min-height: 4rem;
     }
 
     .game-section button {
@@ -518,7 +518,7 @@ body {
     #choice-description {
         font-size: 14px;
         margin-top: 6.25rem;
-        min-height: 2.5rem;
+        min-height: 3rem;
     }
 
     .game-section button {
@@ -780,7 +780,7 @@ body {
     #choice-description {
         font-size: 14px;
         margin-top: 6.25rem;
-        min-height: 2.5rem;
+        min-height: 3rem;
     }
 
     .game-section button {
@@ -1014,7 +1014,7 @@ body {
     #choice-description {
         font-size: 14px;
         margin-top: 6.25rem;
-        min-height: 2.5rem;
+        min-height: 3rem;
     }
 
     .game-section button {
@@ -1157,11 +1157,10 @@ body {
 }
 
 #close {
-    margin-top: 3rem;
+    cursor: pointer;
+    margin-top: 1rem;
     font-size: 35px;
     transition: 0.3s ease;
-    height: 3rem;
-    width: 3rem;
     align-items: center;
     justify-content: center;
 }
@@ -1403,11 +1402,10 @@ body {
 }
 
 #simple-close {
-    margin-top: 3rem;
+    cursor: pointer;
+    margin-top: 1rem;
     font-size: 35px;
     transition: 0.3s ease;
-    height: 3rem;
-    width: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2128,7 +2126,7 @@ body.light-theme #quote p {
 }
 
 body.light-theme .lines {
-    background-color: #0a0b0a;
+    background-color: #181a18;
     box-shadow: 8px 8px 0px #82947e;
 }
 

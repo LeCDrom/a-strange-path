@@ -23,10 +23,18 @@ if (close_button && menu) {
     close_button.addEventListener('click', function () {
         menu.style.display = 'none';
     });
+
+    menu.addEventListener('click', function () {
+        menu.style.display = 'none';
+    });
 }
 
 if (simple_close_button && simple_menu) {
     simple_close_button.addEventListener('click', function () {
+        simple_menu.style.display = 'none';
+    });
+
+    simple_menu.addEventListener('click', function () {
         simple_menu.style.display = 'none';
     });
 }
