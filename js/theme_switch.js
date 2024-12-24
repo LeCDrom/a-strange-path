@@ -9,6 +9,7 @@ updateIcons(currentTheme);
 
 // Add event listener to toggle button
 themeToggleButton.addEventListener('click', () => {
+  console.log('THEME SWITCHED')
   // Toggle between themes
   currentTheme = (currentTheme === 'light-theme') ? 'dark-theme' : 'light-theme';
 

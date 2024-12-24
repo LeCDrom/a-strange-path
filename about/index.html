@@ -20,7 +20,9 @@
     <!-- Page transition -->
     <div id="load"></div>
     <header id="fixed-header">
+        <button class="simple-header-buttons displayed-mobile" id="simple-open-menu" title="Change theme"><i class="fa-regular fa-compass"></i></button> <!-- Only displayed on mobile -->
         <a href="../index.html" id="small-title" class="title" title="A Strange Path">A Strange Path</a>
+        <button class="simple-header-buttons displayed-mobile" id="theme-toggle" title="Change theme"><i class="fa-solid fa-sun"></i></button> <!-- Only displayed on mobile -->
         <nav id="fixed-header-nav">
             <button class="header-buttons" onclick="window.location.href='../index.html'" title="Home">Home</button>
             <button class="header-buttons" onclick="window.location.href='../guide/'" title="How to play">How to play</button>
@@ -32,24 +34,33 @@
     </header>
 
     <main id="about-main">
+
+        <div id="simple-nav-wrapper"  class="displayed-mobile"> <!-- Only displayed on mobile -->
+            <nav id="simple-nav">
+                <button onclick="window.location.href='../index.html'" title="Home">Home</button>
+                <button onclick="window.location.href='../guide/'" title="How to play">How to play</button>
+                <button onclick="window.location.href='../about/'" title="About">About</button>
+                <button onclick="window.location.href='https\://github.com/LeCDrom/'" title="My GitHub">My GitHub</button>
+                <a id="simple-close">X</a>
+            </nav>
+        </div>
+
         <section id="about-section">
-            
             <!-- Replaced by script -->
             <h1 id="about-h1"></h1>
             <p id="about-p"></p>
             <button id="about-button" class="about-buttons">About the project</button>
             <!-- Replaced by script -->
-             
         </section>
     </main>
 
     <footer id="relative-footer">
-        <!-- Footer -->
         <p>Projet final SaÉ 1.14 2024</p>
         <p>DAIRIN Côme</p>  
     </footer>
 
     <!-- Scripts -->
+    <script src="../js/menu.js"></script>
     <script src="../js/theme_switch.js"></script>
     <script src="../js/about_switch.js"></script>
 </body>
