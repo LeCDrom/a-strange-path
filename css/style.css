@@ -260,7 +260,7 @@ body {
     }
 
     #choice-description {
-        margin-top: 6.75rem;
+        margin-top: calc(77px + 2rem);
         min-height: 4rem;
     }
 
@@ -517,7 +517,7 @@ body {
 
     #choice-description {
         font-size: 14px;
-        margin-top: 6.25rem;
+        margin-top: calc(67px + 2rem);
         min-height: 3rem;
     }
 
@@ -779,7 +779,7 @@ body {
 
     #choice-description {
         font-size: 14px;
-        margin-top: 6.25rem;
+        margin-top: calc(67px + 2rem);
         min-height: 3rem;
     }
 

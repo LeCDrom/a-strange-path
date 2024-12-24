@@ -84,11 +84,11 @@ const choices = [
   },
   {
     id: 'check_stump',
-    text: 'The light comes from under.',
+    text: 'What\'s making this light?',
     options: [
-      { text: 'Look under the stump', nextId: 'check_under_stump' }
+      { text: 'Look below', nextId: 'check_under_stump' }
     ],
-    description: '"A faint yellowish light emanates from the stump.<br>What is this?"'
+    description: '"A faint yellowish light emanates from the stump."'
   },
   {
     id: 'check_under_stump',
@@ -114,7 +114,7 @@ const choices = [
     options: [
       { text: 'Go back home', nextId: 'none' }
     ],
-    description: '[TO BE CONTINUED]'
+    description: 'I have never seen anything like that before. The mushrooms are glowing a bright yellow.'
   },
 ];
 
