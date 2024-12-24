@@ -11,6 +11,7 @@
 html, body {
     height: 100%;
     width: 100%;
+    /* overflow-x: hidden; */
 }
 
 body {
@@ -298,12 +299,18 @@ body {
         font-size: 35px;
     }
 
+    #questions-content {
+        display: grid;
+        grid-template-columns: 75% 25%;
+    }
+
     #content-container p {
         font-size: 18px;
         line-height: 1.75rem;
     }
 
     #useless-buttons-container {
+        display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
@@ -415,10 +422,6 @@ body {
 /* ===================== TABLET LAYOUT ==================== */
     
     /* --------- FRONT PAGE SECTION ---------*/
-
-    #close {
-        display: none;
-    }
 
     #main-footer {
         background: linear-gradient(180deg, rgba(34, 37, 34, 1) 0%, rgba(10, 11, 10, 1) 15%, rgba(10, 11, 10, 1) 100%);
@@ -548,13 +551,19 @@ body {
         font-size: 28px;
     }
 
+    #questions-content {
+        display: grid;
+        grid-template-columns: 75% 25%;
+    }
+
     #content-container p {
         font-size: 14px;
         line-height: 1.25rem;
     }
 
     #useless-buttons-container {
-        grid-template-columns: 1fr 0;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
 
@@ -666,7 +675,7 @@ body {
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
     /* ===================== MOBILE LAYOUT ==================== */
             
     /* --------- FRONT PAGE SECTION ---------*/
@@ -804,13 +813,19 @@ body {
         font-size: 28px;
     }
 
+    #questions-content {
+        display: grid;
+        grid-template-columns: 65% 35%;
+    }
+
     #content-container p {
         font-size: 14px;
         line-height: 1.25rem;
     }
 
     #useless-buttons-container {
-        grid-template-columns: 1fr 0;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
 
@@ -822,27 +837,22 @@ body {
 
     #B1 {
         grid-column: 1;
-        width: 4rem;
     }
 
     #A2 {
         grid-column: 1;
-        width: 6rem;
     }
 
     #B3 {
         grid-column: 1;
-        width: 5rem;
     }
 
     #A4 {
         grid-column: 1;
-        width: 7rem;
     }
 
     #B5 {
         grid-column: 1;
-        width: 4rem;
     }
 
     #section-separator {
@@ -850,7 +860,239 @@ body {
     }
 
     #guide h1 {
+        font-size: 28px;
+    }
+
+    #guide {
+        font-size: 15px;
+        line-height: 1.25rem;
+    }
+
+    #good-luck {
+        font-size: 25px;
+    }
+
+    #relative-footer {
+        height: 80px;
+        background: linear-gradient(180deg, rgba(34, 37, 34, 1) 0%, rgba(10, 11, 10, 1) 15%, rgba(10, 11, 10, 1) 100%);
+    }
+
+    /* ==================== ABOUT SECTION ==================== */
+
+    #about-body footer {
+        margin-top: 8rem;
+    }
+
+    #about-section {
+        width: 90%;
+        margin-top: 125px;
+    }
+
+    #about-section h1 {
         font-size: 40px;
+    }
+
+    #about-section p {
+        font-size: 14px;
+        line-height: 1.25rem;
+    }
+
+    .about-buttons {
+        height: 35px;
+        font-size: 14px;
+        margin-top: 1rem;
+    }
+
+    .to-notice {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 374px) {
+/* ===== SMALL MOBILE LAYOUT ====== */
+            
+    /* --------- FRONT PAGE SECTION ---------*/
+
+    #main-footer {
+        background: linear-gradient(180deg, rgba(34, 37, 34, 1) 0%, rgba(10, 11, 10, 1) 15%, rgba(10, 11, 10, 1) 100%);
+    }
+
+    #main-header {
+        justify-content: center;
+    }
+
+    #open-menu {
+        display: block;
+    }
+
+    #mobile-github {
+        display: block;
+        position: absolute;
+    }
+
+    #close {
+        display: flex;
+    }
+
+    #main-title {
+        margin-top: 2px;
+        margin-right: 0;
+    }
+
+    #main-title.title {
+        font-size: 22px;
+    }
+
+    .dead-link {
+        font-size: 15px;
+    }
+
+    .link {
+        font-size: 15px;
+    }
+
+    #main-nav {
+        display: none;
+    }
+
+    #presentation {
+        height: 13rem;
+        align-items: center;
+    }
+
+    #presentation h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    #presentation p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #presentation button {
+        font-size: 20px;
+    }
+
+    #main-footer p {
+        font-size: 13px;
+    }
+
+    /* --------- GAME HEADER SECTION ---------*/
+    
+    #fixed-header {
+        height: 65px;
+        justify-content: center;
+    }
+    
+    #small-title {
+        font-size: 25px;
+    }
+    
+    #fixed-header-nav {
+        display: none;
+    }
+    
+    #fixed-header button {
+        height: 40px;
+        width: 40px;
+        font-size: 18px;
+    }
+
+    /* ==================== GAME SECTION ==================== */
+
+    #relative-footer p {
+        font-size: 13px;
+    }
+
+    .game-section {
+        font-size: 15px;
+        min-height: 3.5rem;
+    }
+
+    #choice-description {
+        font-size: 14px;
+        margin-top: 6.25rem;
+        min-height: 2.5rem;
+    }
+
+    .game-section button {
+        font-size: 13px;
+    }
+
+    #button-container {
+        flex-direction: column;
+    }
+
+    /* ==================== HOW TO PLAY SECTION ==================== */
+
+    #quote-container {
+        margin-top: calc(65px + 3rem);
+    }
+
+    #quote p {
+        font-size: 25px;
+    }
+
+    #author {
+        font-size: 14px;
+    }
+
+    #content-container {
+        gap: 10px;
+    }
+
+    .question {
+        font-size: 28px;
+    }
+
+    #questions-content {
+        display: block;
+    }
+
+    #content-container p {
+        font-size: 14px;
+        line-height: 1.25rem;
+    }
+
+    #useless-buttons-container {
+        display: none;
+    }
+
+
+    .useless-buttons {
+        height: 35px;
+        padding-inline: 10px;
+        font-size: 15px;
+    }
+
+    #B1 {
+        grid-column: 1;
+    }
+
+    #A2 {
+        grid-column: 1;
+    }
+
+    #B3 {
+        grid-column: 1;
+    }
+
+    #A4 {
+        grid-column: 1;
+    }
+
+    #B5 {
+        grid-column: 1;
+    }
+
+    #section-separator {
+        margin-bottom: 3rem;
+    }
+
+    #guide h1 {
+        font-size: 23px;
     }
 
     #guide {
@@ -917,21 +1159,15 @@ body {
 #close {
     margin-top: 3rem;
     font-size: 35px;
-    transition: 0.3s ease;        
-    /* background: linear-gradient(180deg, rgba(34, 37, 34, 0.45) 0%, rgba(10, 11, 10, 0.45) 15%, rgba(10, 11, 10, 0.45) 100%);
-    backdrop-filter: blur(1.5px);
-    box-shadow: 0px 0px 8px 2px rgba(10, 11, 10, 0.45);
-    border: 1px solid rgba(255, 255, 255, 0.18);*/
-    /* border-radius: 10px; */
+    transition: 0.3s ease;
     height: 3rem;
     width: 3rem;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid rgba(255, 255, 255, 0.18); */
 }
 
 #main-nav-wrapper {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: -80px;
     left: 0;
@@ -978,8 +1214,7 @@ body {
     display: flex;
     background: rgb(52, 56, 52);
     background: linear-gradient(0deg, rgba(34, 37, 34, 0.45) 0%, rgba(10, 11, 10, 0.45) 15%, rgba(10, 11, 10, 0.45) 100%);
-    z-index: 9999;
-    /* border-bottom: 2px solid #9cae9c; */
+    z-index: 999;
     backdrop-filter: blur(1.5px);
     box-shadow: 0px 0px 8px 2px rgba(10, 11, 10, 0.45);
     border-bottom: 1px solid rgba(255, 255, 255, 0.18);
@@ -1128,23 +1363,10 @@ body {
     gap: 5px;
 }
 
-/* #main-content {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 700px;
-    background-color: rgb(10, 11, 10);
-    
-    box-shadow: 0px -20px 50px 40px #0a0b0a;
-    
-    border-top: 2px solid #9cae9c;
-    margin-top: 70vh;
-} */
-
 /* ==================== GAME HEADER SECTION ==================== */
 
 #simple-nav-wrapper {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: -80px;
     left: 0;
@@ -1385,7 +1607,6 @@ body {
     word-wrap: break-word;
     width: 100%;
     border: none;
-    /* padding-bottom: 2rem; */
     background: none;
     text-align: center;
 }
@@ -1424,9 +1645,7 @@ body {
 }
 
 .lines {
-    white-space: nowrap;
     width: fit-content;
-    overflow: hidden;
 }
 
 #author {
@@ -1450,11 +1669,8 @@ body {
     margin-bottom: 2rem;
 }
 
-#about-content {
+#questions-content {
     margin-inline: 2rem;
-    display: grid;
-    grid-template-columns: 75% 25%;
-    gap: 2rem;
     align-content: start;
 
     background: #0a0b0a;
@@ -1471,8 +1687,6 @@ body {
 }
 
 #useless-buttons-container {
-    display: grid;
-    margin-right: 2rem;
     align-items: center;
     justify-items: end;
 }
@@ -1495,27 +1709,22 @@ body {
 
 #B1 {
     grid-row: 1;
-    width: 4rem;
 }
 
 #A2 {
     grid-row: 2;
-    width: 6rem;
 }
 
 #B3 {
     grid-row: 3;
-    width: 5rem;
 }
 
 #A4 {
     grid-row: 4;
-    width: 7rem;
 }
 
 #B5 {
     grid-row: 5;
-    width: 4rem;
 }
 
 #section-separator {
@@ -1592,13 +1801,11 @@ body {
 
     opacity: 1;
     transition: 0.5s ease-in-out;
-    /* Smooth fade effect */
 }
 
 /* Hidden state for fade-out */
 #about-section.hidden {
     opacity: 0;
-    /* Fully transparent */
 }
 
 #about-section h1 {
@@ -1724,7 +1931,7 @@ body.dark-theme #main-content {
     background: #0a0b0a;
 }
 
-body.light-theme #about-content {
+body.light-theme #questions-content {
     background: #0a0b0a;
 }
 
@@ -1935,7 +2142,7 @@ body.light-theme #main-content {
     background: #9cae9c;
 }
 
-body.light-theme #about-content {
+body.light-theme #questions-content {
     background: #9cae9c;
 }
 
