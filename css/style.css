@@ -1830,7 +1830,6 @@ body.dark-theme #simple-nav button {
 body.dark-theme #simple-nav button:hover {
     color: #0a0b0a;
     background-color: #9cae9c;
-    border-color: #0a0b0a;
 }
 
 body.dark-theme #simple-nav-wrapper {
@@ -2021,7 +2020,6 @@ body.light-theme #simple-nav button {
 body.light-theme #simple-nav button:hover {
     color: #9cae9c;
     background-color: #0a0b0a;
-    border-color: #9cae9c;
 }
 
 body.light-theme #simple-nav-wrapper {
