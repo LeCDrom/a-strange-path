@@ -110,12 +110,29 @@ const choices = [
   },
   {
     id: 'walk_mushrooms',
+    text: 'As beautiful as this place can be, I shouldn\'t linger for too long.<br>I must find out who I am and why I am here.',
+    options: [
+      { text: 'Approach the mushrooms', nextId: 'approach_mushrooms' },
+      { text: 'Continue walking', nextId: 'walk_past_clearing' }
+    ],
+    description: 'I have never seen anything like that before.<br>The mushrooms are glowing a bright yellow and shining spores pierce through the ever-present darkness.<br>This place might not be the most reassuring but it sure has some pretty spots!'
+  },
+  {
+    id: 'approach_mushrooms',
+    text: 'I should really get away from the spores. I don\' want them to mess with my head, I\'m lost enough as it is...',
+    options: [
+      { text: 'Step back', nextId: 'walk_past_clearing' }
+    ],
+    description: 'Something must be up with the spores...<br>I feel a bit lightheaded...<br>The glow is intensifying...'
+  },
+  {
+    id: 'walk_past_clearing',
     text: 'Stay tuned...',
     options: [
-      { text: 'Go back home', nextId: 'none' }
+      { text: '...', nextId: 'walk_past_clearing' }
     ],
-    description: 'I have never seen anything like that before. The mushrooms are glowing a bright yellow.'
-  },
+    description: '[TO BE CONTINUED]'
+  }
 ];
 
 // Get HTML elements
@@ -138,7 +155,7 @@ function displayChoice(choiceId) {
   }
 
   // Update the content of choice-text without affecting button-container
-  choiceTextContainer.textContent = choice.text;
+  choiceTextContainer.innerHTML = choice.text;
 
   // Update the current choice's description
   let currentChoiceDescription = document.getElementById('choice-description')
